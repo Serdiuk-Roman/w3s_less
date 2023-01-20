@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Backgrounds</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>CSS Backgrounds</h1>
+      <p>
+        Властивості фону CSS використовуються для додавання фонових ефектів для
+        елементів.
+      </p>
+      <hr />
+
+      <!-- Color -->
+      <section>
+        <h2>Color</h2>
+        <div id="bg-color">
+          <p>background-color: red;</p>
+          <ul>
+            <li>дійсна назва кольору, наприклад "red"</li>
+            <li>шістнадцяткове значення, наприклад "#ff0000"</li>
+            <li>значення RGB, наприклад "rgb(255,0,0)"</li>
+          </ul>
+        </div>
+        <div id="bg-color2">
+          <p>opacity:0.5;</p>
+        </div>
+        <div id="bg-color3">
+          <p>background: rgba(255, 0, 0, 0.5);</p>
+        </div>
+        <br />
+      </section>
+      <hr />
+
+      <!-- Image -->
+      <section>
+        <h2>Image</h2>
+        <div id="bg-image">
+          <p>Image as the background!</p>
+        </div>
+        <br />
+      </section>
+      <hr />
+
+      <!-- Repeat -->
+      <section>
+        <h2>Image Repeat</h2>
+        <div id="bg-repeat">
+          <p>Тут фонове зображення повторюється тільки по горизонталі!</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            Consectetur repudiandae quisquam assumenda, <br />
+            placeat temporibus, illum tempora quibusdam <br />
+            cum ipsa deleniti ad necessitatibus?
+          </p>
+        </div>
+        <div id="bg-repeat2">
+          <p>
+            background-repeat: no-repeat;<br />
+            background-position: right top; <br /><br />
+            Властивість background-position використовується <br />
+            для визначення положення фонового зображення.
+          </p>
+        </div>
+        <br />
+      </section>
+      <hr />
+
+      <!-- Attachment -->
+      <section>
+        <h2>Background Attachment</h2>
+        <div id="bg-attachement">
+          <p>
+            background-repeat: no-repeat; <br />
+            background-position: center top; <br />
+            background-attachment: fixed;
+          </p>
+          <p>
+            Властивість background-attachment визначає, <br />
+            чи має фонове зображення прокручуватися чи <br />
+            бути фіксованим (не прокручуватиметься <br />
+            разом із рештою сторінки):
+          </p>
+        </div>
+        <div id="bg-attachement2">
+          <p>
+            background-repeat: no-repeat; <br />
+            background-position: center top; <br />
+            background-attachment: scroll;
+          </p>
+          <p>
+            Властивість background-attachment визначає, <br />
+            чи має фонове зображення прокручуватися чи <br />
+            бути фіксованим (не прокручуватиметься <br />
+            разом із рештою сторінки):
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Facere omnis dolore <br />
+            eligendi dolor eum quasi atque iste. <br />
+            Maiores, suscipit, explicabo, iste <br />
+            distinctio commodi cupiditate blanditiis <br />
+            repudiandae provident ea laudantium ad.
+          </p>
+        </div>
+
+        <br />
+      </section>
+      <hr />
+
+      <!-- Shorthand -->
+      <section>
+        <h2>Background Shorthand</h2>
+        <div>
+          Короткий запис
+          <p>
+            background-color: #ffffff; <br />
+            background-image: url("img_tree.png"); <br />
+            background-repeat: no-repeat; <br />
+            background-position: right top;
+          </p>
+          <p>Еквівалентно</p>
+          <p>background: #ffffff url("img_tree.png") no-repeat right top;</p>
+        </div>
+        <br />
+      </section>
+      <hr />
+
+      <section>
+        <h2>Інші</h2>
+        <div>
+          <p>
+            background-clip - Визначає область малювання фону <br />
+            background-origin - Вказує, де розташовано фонове зображення <br />
+            background-size - Вказує розмір фонового(их) зображення(ів)
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

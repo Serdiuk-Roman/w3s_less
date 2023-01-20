@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Fonts</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|outline"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Trirong"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <h1>CSS Fonts</h1>
+    <p>Вибір шрифту важливий!</p>
+    <hr />
+
+    <article>
+      <!-- Font Family -->
+      <section>
+        <h2>Font Family</h2>
+        <p>У CSS існує п’ять загальних сімейств шрифтів:</p>
+        <div class="wrapper">
+          <img src="img/serif.gif" alt="serif example" />
+          <ol>
+            <li class="ex1">
+              <strong>Serif</strong> шрифти мають невелику риску по краях кожної
+              літери. Вони створюють відчуття офіційності та елегантності.
+            </li>
+            <li class="ex2">
+              <strong>Sans-serif</strong> шрифти мають чіткі лінії (без дрібних
+              штрихів). Вони створюють сучасний і мінімалістичний вигляд.
+            </li>
+            <li class="ex3">
+              <strong>Monospace</strong> шрифти - тут усі літери мають однакову
+              фіксовану ширину. Вони створюють механічний вигляд.
+            </li>
+            <li class="ex4">
+              <strong>Cursive</strong> шрифти імітують людський почерк.
+            </li>
+            <li class="ex5">
+              <strong>Fantasy</strong> — це декоративні/грайливі шрифти.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Safe Fonts -->
+      <section>
+        <h2>Web Safe Fonts</h2>
+        <p>
+          Нижче наведено список найкращих веб-безпечних шрифтів для HTML і CSS:
+        </p>
+        <ul>
+          <li>Arial (sans-serif)</li>
+          <li>Verdana (sans-serif)</li>
+          <li>Tahoma (sans-serif)</li>
+          <li>Trebuchet MS (sans-serif)</li>
+          <li>Times New Roman (serif)</li>
+          <li>Georgia (serif)</li>
+          <li>Garamond (serif)</li>
+          <li>Courier New (monospace)</li>
+          <li>Brush Script MT (cursive)</li>
+        </ul>
+        <p>Example:</p>
+        <ul>
+          <li class="ex1">
+            This is a Serif Fonts <br />
+            font-family: "Times New Roman", Times, serif;
+          </li>
+          <li class="ex2">
+            This is a Sans-Serif Fonts <br />
+            font-family: Tahoma, Verdana, sans-serif;
+          </li>
+          <li class="ex3">
+            This is a Monospace Fonts <br />
+            font-family: "Courier New", Courier, monospace;
+          </li>
+          <li class="ex4">
+            This is a Cursive Fonts <br />
+            font-family: "Brush Script MT", cursive;
+          </li>
+          <li class="ex5">
+            This is a Fantasy Fonts <br />
+            font-family: Copperplate, Papyrus, fantasy;
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <!-- style -->
+      <section>
+        <h2>Font Style</h2>
+        <p>
+          Властивість <strong>font-style</strong> здебільшого використовується
+          для визначення тексту курсивом.
+        </p>
+        <ul>
+          <li class="s-nor">normal - Текст відображається нормально</li>
+          <li class="s-it">italic - Текст виділяється курсивом</li>
+          <li class="s-obl">
+            oblique - Текст "нахилений" (косий дуже схожий на курсив, але менш
+            підтримується)
+          </li>
+        </ul>
+        <p>
+          Властивість <strong>font-weight</strong> визначає щільність шрифту:
+        </p>
+        <ul>
+          <li class="w-lig">lighter</li>
+          <li class="w-nor">normal</li>
+          <li class="w-bold">bold</li>
+          <li class="w-bolder">bolder</li>
+        </ul>
+        <p>
+          Властивість <strong>font-variant</strong> визначає,
+          <span class="f-var"
+            >чи повинен текст відображатися шрифтом із зменшеними великими
+            літерами.</span
+          >
+        </p>
+      </section>
+      <hr />
+
+      <!-- Font Size -->
+      <section>
+        <h2>Font Size</h2>
+        <p>Властивість <strong>font-size</strong> встановлює розмір тексту.</p>
+        <p>
+          <strong>Примітка.</strong> Якщо ви не вкажете розмір шрифту, розмір
+          <em>за замовчуванням</em> для звичайного тексту, наприклад абзаців,
+          становить 16 пікселів (16 пікселів=1 ем). 1em дорівнює поточному
+          розміру шрифту. Стандартний розмір тексту в браузерах становить 16
+          пікселів.
+        </p>
+      </section>
+      <hr />
+
+      <!-- Google Fonts -->
+      <section>
+        <h2>Google Fonts</h2>
+        <p>
+          Шрифти Google безкоштовні для використання та пропонують понад 1000
+          шрифтів на вибір.
+        </p>
+        <p>Тут ми використаємо шрифт під назвою "Sofia" від Google Fonts:</p>
+        <div class="g-font">
+          <h3>Sofia Font</h3>
+          <p class="font-effect-outline">
+            Lorem ipsum dolor sit amet + effect=neon.
+          </p>
+          <p class="font-effect-fire">123456790 + effect=outline</p>
+        </div>
+        <p>
+          Тут ми використаємо шрифт під назвою «Audiowide» від Google Fonts:
+        </p>
+        <div class="g-font2">
+          <h1>Audiowide Font</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>123456790</p>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Great Font Pairings(Поєднання) -->
+      <section>
+        <h2 class="g-font3">Great Font Pairings (Поєднання шрифтів)</h2>
+        <ol>
+          <li>
+            Доповнювати (Чудове поєднання шрифтів має гармоніювати, не бути
+            надто схожими чи надто різними)
+          </li>
+          <li>
+            Використовуйте суперсімейства шрифтів (Lucida Sans, Lucida Serif,
+            Lucida Typewriter Sans, Lucida Typewriter Serif і Lucida Math.)
+          </li>
+          <li>
+            Контраст - король (Комбінування без засічок із засічками є добре
+            відомим поєднанням)
+          </li>
+          <li>Виберіть лише одного боса (зміна розміру, ваги та коліру)</li>
+        </ol>
+      </section>
+      <hr />
+
+      <!-- Font Property -->
+      <section>
+        <h2>Властивість шрифту</h2>
+        <ul>
+          <li>font-style</li>
+          <li>font-variant</li>
+          <li>font-weight</li>
+          <li>font-size/line-height</li>
+          <li>font-family</li>
+        </ul>
+        <p>Приклад: font: italic bold 12px/30px Georgia, serif;</p>
+        <p>Примітка: значення font-size і font-family є обов’язковими.</p>
+      </section>
+      <hr />
+
+      <!-- Icons -->
+      <section>
+        <h2>Icons</h2>
+        <p>Some Google icons:</p>
+        <span class="material-icons">cloud</span>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">3d_rotation</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

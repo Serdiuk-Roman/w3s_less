@@ -1,0 +1,214 @@
+/* Обнуление
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+-------------------- */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #e7f5d3;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+footer {
+  height: 240px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#customers tr:hover {
+  background-color: #ddd;
+}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+table.bor,
+.bor th,
+.bor td {
+  border: 1px solid;
+}
+
+table.wid,
+.wid th,
+.wid td {
+  border: 1px solid;
+}
+table.wid {
+  width: 100%;
+}
+
+table.collapse,
+.collapse td,
+.collapse th {
+  border: 1px solid;
+}
+table.collapse {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.wid,
+.wid td,
+.wid th {
+  border: 1px solid black;
+}
+table.wid {
+  border-collapse: collapse;
+  width: 70%;
+}
+.wid th {
+  height: 64px;
+}
+
+table.align,
+.align td,
+.align th {
+  border: 1px solid black;
+}
+table.align {
+  border-collapse: collapse;
+  width: 100%;
+}
+.align th {
+  text-align: right;
+  height: 64px;
+  vertical-align: top;
+}
+.align td {
+  text-align: center;
+  height: 32px;
+  vertical-align: bottom;
+}
+
+table.pad,
+.pad td,
+.pad th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table.pad {
+  border-collapse: collapse;
+  width: 100%;
+}
+.pad th,
+.pad td {
+  padding: 16px;
+}
+
+table.divid {
+  border-collapse: collapse;
+  width: 100%;
+}
+.divid th,
+.divid td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table.hov {
+  border-collapse: collapse;
+  width: 100%;
+}
+.hov th,
+.hov td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.hov tr:hover {
+  background-color: coral;
+}
+
+table.strip {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.strip th,
+.strip td {
+  text-align: left;
+  padding: 8px;
+}
+.strip tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.strip th {
+  background-color: #04aa6d;
+  color: white;
+}
+.strip tr:hover {
+  background-color: lightsteelblue;
+}
+
+table.resp {
+  border-collapse: collapse;
+  width: 100%;
+}
+.resp th,
+.resp td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #bbb;
+}
+.resp tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+caption {
+  text-align: left;
+}

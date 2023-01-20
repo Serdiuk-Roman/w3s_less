@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images</title>
+  </head>
+
+  <body>
+    <img
+      src="https://www.w3schools.com/html/img_girl.jpg"
+      alt="Girl in a jacket"
+      width="500"
+      height="600"
+    />
+    <img
+      src="https://www.w3schools.com/html/html5.gif"
+      alt="HTML5 Icon"
+      style="width: 128px; height: 128px"
+    />
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+    />
+    <h2>Floating Images</h2>
+    <p><strong>Float the image to the right:</strong></p>
+
+    <p>
+      <img
+        src="https://www.w3schools.com/html/smiley.gif"
+        alt="Smiley face"
+        style="float: right; width: 42px; height: 42px"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image.
+    </p>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p>
+      <img
+        src="https://www.w3schools.com/html/smiley.gif"
+        alt="Smiley face"
+        style="float: left; width: 42px; height: 42px"
+      />
+      A paragraph with a floating image. A paragraph with a floating image. A
+      paragraph with a floating image.
+    </p>
+    <h2>Image Map</h2>
+    <img
+      src="https://www.w3schools.com/html/workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="#!"
+        onclick="myFunctionComputer()"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="#!"
+        onclick="myFunctionPhone()"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Coffee"
+        href="#!"
+        onclick="myFunctionCoffee()"
+      />
+    </map>
+
+    <script>
+      function myFunctionComputer() {
+        alert("You clicked the computer!");
+      }
+      function myFunctionPhone() {
+        alert("You clicked the phone!");
+      }
+      function myFunctionCoffee() {
+        alert("You clicked the coffee cup!");
+      }
+    </script>
+
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg" />
+      <source media="(min-width: 465px)" srcset="img_car.jpg" />
+      <img src="img_girl.jpg" />
+    </picture>
+  </body>
+</html>

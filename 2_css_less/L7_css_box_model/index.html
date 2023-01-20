@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Box Model</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>CSS Box Model</h1>
+
+      <p>
+        Властивості height та width встановлюють висоту/ширину області всередині
+        відступу(padding), межі(border) та поля(margin) елемента.
+      </p>
+      <table>
+        <tr>
+          <td><img src="img/box.png" alt="box_model" /></td>
+          <td>
+            <div class="marg">
+              <div class="bor">
+                <div class="pad">
+                  <div class="cont"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <ul>
+        <li>Content – вміст поля, де з’являються текст і зображення</li>
+        <li>Padding – очищає область навколо вмісту. Відступ прозорий</li>
+        <li>Border – рамка, що охоплює відступи та вміст</li>
+        <li>Margin – очищає область за межами. Поле прозоре</li>
+      </ul>
+      <p>
+        <strong>Важливо</strong>: коли ви встановлюєте властивості ширини та
+        висоти елемента за допомогою CSS, ви просто встановлюєте ширину та
+        висоту області вмісту. Щоб обчислити повний розмір елемента, ви також
+        повинні додати відступи, рамки та поля.
+      </p>
+
+    <footer></footer>
+  </body>
+</html>

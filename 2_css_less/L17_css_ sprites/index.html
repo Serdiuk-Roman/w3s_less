@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Image Sprites</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Image Sprites</h1>
+    <p>Спрайт зображення — це набір зображень, складених в одне зображення.</p>
+    <p>
+      Використання спрайтів зображень зменшить кількість запитів до сервера та
+      заощадить пропускну здатність.
+    </p>
+    <hr />
+
+    <!--  -->
+    <div>
+      <h2>Simple Example</h2>
+      <p>
+        Замість використання трьох окремих зображень ми використовуємо одне
+        зображення
+      </p>
+      <img src="img/img_navsprites.gif" alt="demo" />
+      <p>
+        За допомогою CSS ми можемо показати лише ту частину зображення, яка нам
+        потрібна.
+      </p>
+      <div class="clearfix">
+        <pre>
+          #prev {
+            width: 43px;
+            height: 44px;
+            background: url(img_navsprites.gif) -47px -45px;
+          }
+          #prev:hover {
+            background: url("../img/img_navsprites.gif") -47px 0;
+          }
+        </pre>
+        <div id="prev"></div>
+      </div>
+    </div>
+    <hr />
+
+    <footer></footer>
+  </body>
+</html>

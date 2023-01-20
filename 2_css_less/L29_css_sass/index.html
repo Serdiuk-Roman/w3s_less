@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Sass</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Sass</h1>
+    <hr />
+
+    <!-- Sass Intro -->
+    <div>
+      <h2>Sass Introduction</h2>
+      <p>
+        Sass дозволяє використовувати фішки, яких немає в CSS, як-от змінні,
+        вкладені правила, міксини, імпорт, успадкування, вбудовані функції та
+        інші речі.
+      </p>
+      <ul>
+        <li>Sass не залежить від платформи, операційної системи</li>
+        <li>
+          Sass працює в Edge/IE (починаючи з IE 8), Firefox, Chrome, Safari,
+          Opera
+        </li>
+        <li>Sass базується на Ruby (мові програмування)</li>
+      </ul>
+      <h3>Variables</h3>
+      <p>
+        Змінні — це спосіб зберігати інформацію, яку можна використовувати
+        пізніше. За допомогою Sass ви можете зберігати інформацію у змінних,
+        наприклад:
+      </p>
+      <ul>
+        <li>strings</li>
+        <li>numbers</li>
+        <li>colors</li>
+        <li>booleans</li>
+        <li>lists</li>
+        <li>nulls</li>
+      </ul>
+      <pre>
+        $myFont: Helvetica, sans-serif;
+        $myColor: red;
+
+        body {
+          font-family: $myFont;
+          color: $myColor;
+        }</pre
+      >
+      <h3>Вкладення</h3>
+      <div class="two-column">
+        <pre>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}</pre
+        >
+        <div class="ver-mid">>>></div>
+        <pre>
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}</pre
+        >
+      </div>
+      <h3>Importing</h3>
+      <p>
+        Ви можете створювати невеликі файли з фрагментами CSS для включення в
+        інші файли Sass. Прикладами таких файлів можуть бути: файл скидання,
+        змінні, кольори, шрифти, розміри шрифтів тощо.
+      </p>
+      <pre>@import filename;</pre>
+      <h3>mixin</h3>
+      <pre>
+        @mixin mixin-name {
+          property: value;
+          property: value;
+          ...
+        }
+        selector {
+          @include mixin-name;
+        }</pre
+      >
+      <h3>extend</h3>
+      <pre>
+      .button-basic  {
+        border: none;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .button-submit  {
+        @extend .button-basic;
+        background-color: green;
+        color: white;
+      }</pre
+      >
+    </div>
+    <h3>String Functions</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th>Function</th>
+          <th>Example</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>quote(<em>string</em>)</td>
+          <td>quote(Hello world!)</td>
+          <td>"Hello world!"</td>
+        </tr>
+        <tr>
+          <td>str-index(<em>string</em>,<em> substring</em>)</td>
+          <td>str-index("Hello world!", "H")</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>str-insert(<em>string</em>, <em>insert</em>, <em>index</em>)</td>
+          <td>str-insert("Hello world!", " wonderful", 6)</td>
+          <td>"Hello wonderful world!"</td>
+        </tr>
+        <tr>
+          <td>str-length(<em>string</em>)</td>
+          <td>str-length("Hello world!")</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>str-slice(<em>string</em>, <em>start</em>, <em>end</em>)</td>
+          <td>str-slice("Hello world!", 2, 5)</td>
+          <td>"ello"</td>
+        </tr>
+        <tr>
+          <td>to-lower-case(<em>string</em>)</td>
+          <td>to-lower-case("Hello World!")</td>
+          <td>"hello world!"</td>
+        </tr>
+        <tr>
+          <td>to-upper-case(<em>string</em>)</td>
+          <td>to-upper-case("Hello World!")</td>
+          <td>"HELLO WORLD!"</td>
+        </tr>
+        <tr>
+          <td>unique-id()</td>
+          <td>unique-id()</td>
+          <td>tyghefnsv</td>
+        </tr>
+        <tr>
+          <td>unquote(<em>string</em>)</td>
+          <td>unquote("Hello world!")</td>
+          <td>Hello world!</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Numeric Functions</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th>Function</th>
+          <th>Example</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>abs(number)</td>
+          <td>abs(15)<br />abs(-15)</td>
+          <td>15<br />15</td>
+        </tr>
+        <tr>
+          <td>ceil(number)</td>
+          <td>ceil(15.20)</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>comparable(num1, num2)</td>
+          <td>comparable(15px, 10px) <br />comparable(35px, 2em)</td>
+          <td>true<br />false</td>
+        </tr>
+        <tr>
+          <td>floor(number)</td>
+          <td>floor(15.80)</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>max(number...)</td>
+          <td>max(5, 7, 9, 0, -3, -7)</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>min(number...)</td>
+          <td>min(5, 7, 9, 0, -3, -7)</td>
+          <td>-7</td>
+        </tr>
+        <tr>
+          <td>percentage(number)</td>
+          <td>percentage(1.2)</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>random()</td>
+          <td>random()</td>
+          <td>0.45673</td>
+        </tr>
+        <tr>
+          <td>random(number)</td>
+          <td>random(6)</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>round(number)</td>
+          <td>round(15.20)</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+
+    <footer></footer>
+  </body>
+</html>

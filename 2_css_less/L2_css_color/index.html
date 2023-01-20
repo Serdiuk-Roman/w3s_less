@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Colors</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>CSS Colors</h1>
+      <p>
+        Кольори вказуються за допомогою попередньо визначених назв кольорів або
+        значень RGB, HEX, HSL, RGBA, HSLA.
+      </p>
+      <hr />
+
+      <!-- Names -->
+      <section>
+        <h3>Назви</h3>
+        <p>CSS/HTML підтримує 140 стандартних назв кольорів.</p>
+        <p>
+          <span style="background-color: Tomato">Tomato</span>
+
+          <span style="background-color: DodgerBlue">DodgerBlue</span>
+          <span style="background-color: Blue">Blue</span>
+
+          <span style="background-color: MediumSeaGreen">MediumSeaGreen</span>
+          <span style="background-color: Violet">Violet</span>
+          <span style="background-color: Orange">Orange</span>
+          <span style="background-color: SlateBlue">SlateBlue</span>
+          <span style="background-color: Gray">Gray</span>
+          <span style="background-color: LightGray">LightGray</span>
+        </p>
+        <br />
+      </section>
+      <hr />
+
+      <!-- RGB, RGBA -->
+      <section>
+        <h3>RGB</h3>
+        <p>rgb(red, green, blue):</p>
+        <p>
+          <span style="background-color: rgb(255, 0, 0)">rgb(255, 0, 0)</span>
+          <span style="background-color: rgb(0, 0, 255)">rgb(0, 0, 255)</span>
+          <span style="background-color: rgb(60, 179, 113)"
+            >rgb(60, 179, 113)</span
+          >
+          <span style="background-color: rgb(238, 130, 238)"
+            >rgb(238, 130, 238)</span
+          >
+          <span style="background-color: rgb(255, 165, 0)"
+            >rgb(255, 165, 0)</span
+          >
+          <span style="background-color: rgb(106, 90, 205)"
+            >rgb(106, 90, 205)</span
+          >
+        </p>
+        <br />
+
+        <h3>RGBA</h3>
+        <p>rgba(red, green, blue, alpha):</p>
+        <p>
+          <span style="background-color: rgba(255, 99, 71, 0)"
+            >rgba(255, 99, 71, 0)</span
+          >
+          <span style="background-color: rgba(255, 99, 71, 0.2)"
+            >rgba(255, 99, 71, 0.2)</span
+          >
+          <span style="background-color: rgba(255, 99, 71, 0.4)"
+            >rgba(255, 99, 71, 0.4)</span
+          >
+          <span style="background-color: rgba(255, 99, 71, 0.6)"
+            >rgba(255, 99, 71, 0.6)</span
+          >
+          <span style="background-color: rgba(255, 99, 71, 0.8)"
+            >rgba(255, 99, 71, 0.8)</span
+          >
+          <span style="background-color: rgba(255, 99, 71, 1)"
+            >rgba(255, 99, 71, 1)</span
+          >
+        </p>
+        <br />
+      </section>
+      <hr />
+
+      <!-- HEX -->
+      <section>
+        <h3>HEX</h3>
+        <p>
+          #rrggbb <br />
+          Де rr (червоний), gg (зелений) і bb (синій) є шістнадцятковими
+          значеннями від 00 до ff (так само, як десяткові 0-255).
+        </p>
+        <p>
+          <span style="background-color: #ff0000">#ff0000</span>
+          <span style="background-color: #0000ff">#0000ff</span>
+          <span style="background-color: #3cb371">#3cb371</span>
+          <span style="background-color: #ee82ee">#ee82ee</span>
+          <span style="background-color: #ffa500">#ffa500</span>
+          <span style="background-color: #6a5acd">#6a5acd</span>
+        </p>
+        <br />
+        <p>Короткий запис: #ff00cc ->#f0c</p>
+      </section>
+      <hr />
+
+      <!-- HSL, HSLA -->
+      <section>
+        <h3>HSL</h3>
+        <p>
+          Колір можна вказати за допомогою відтінку(hue),
+          насиченості(saturation) та освітленості(lightness) у формі:
+        </p>
+        <p>hsl(hue, saturation, lightness)</p>
+        <p>
+          <span style="background-color: hsl(0, 100%, 50%)"
+            >hsl(0, 100%, 50%)</span
+          >
+          <span style="background-color: hsl(240, 100%, 50%)"
+            >hsl(240, 100%, 50%)</span
+          >
+          <span style="background-color: hsl(147, 50%, 47%)"
+            >hsl(147, 50%, 47%)</span
+          >
+          <span style="background-color: hsl(300, 76%, 72%)"
+            >hsl(300, 76%, 72%)</span
+          >
+          <span style="background-color: hsl(39, 100%, 50%)"
+            >hsl(39, 100%, 50%)</span
+          >
+          <span style="background-color: hsl(248, 53%, 58%)"
+            >hsl(248, 53%, 58%)</span
+          >
+        </p>
+        <br />
+
+        <h3>HSLA</h3>
+        <p>hsla(hue, saturation, lightness, alpha)</p>
+        <p>
+          <span style="background-color: hsla(9, 100%, 64%, 0)"
+            >hsla(9, 100%, 64%, 0)</span
+          >
+          <span style="background-color: hsla(9, 100%, 64%, 0.2)"
+            >hsla(9, 100%, 64%, 0.2)</span
+          >
+          <span style="background-color: hsla(9, 100%, 64%, 0.4)"
+            >hsla(9, 100%, 64%, 0.4)</span
+          >
+          <span style="background-color: hsla(9, 100%, 64%, 0.6)"
+            >hsla(9, 100%, 64%, 0.6)</span
+          >
+          <span style="background-color: hsla(9, 100%, 64%, 0.8)"
+            >hsla(9, 100%, 64%, 0.8)</span
+          >
+          <span style="background-color: hsla(9, 100%, 64%, 1)"
+            >hsla(9, 100%, 64%, 1)</span
+          >
+        </p>
+        <br />
+      </section>
+      <hr />
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

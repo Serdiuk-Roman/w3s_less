@@ -1,0 +1,135 @@
+/* Обнуление
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+-------------------- */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #e7f5d3;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4ccf50;
+}
+footer {
+  height: 240px;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #008cff;
+}
+div {
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  width: 360px;
+  height: 120px;
+  text-align: justify;
+}
+
+.ex5 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  vertical-align: text-bottom;
+}
+
+.ex6 {
+  text-decoration: overline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+.ex7 {
+  text-decoration: line-through blue dashed 1px;
+}
+.ex8 {
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-style: wavy;
+}
+.ex9 {
+  text-decoration: overline underline;
+  text-decoration-color: purple;
+  text-decoration-style: dotted;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.l-spac {
+  letter-spacing: -1px;
+}
+.line-hei {
+  line-height: 0.5;
+  margin: 8px;
+}
+.ind {
+  text-indent: 16px;
+}
+.wi-spac {
+  white-space: nowrap;
+}
+.wo-spac {
+  word-spacing: 8px;
+}
+
+.sh1 {
+  text-shadow: 1px 1px black, 2px 2px 8px purple;
+}
+.sh2 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 4px darkblue, 0 0 25px blue,
+    0 0 3px #ff0000;
+}

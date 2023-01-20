@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Advanced</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Advanced</h1>
+    <hr />
+
+    <!-- Rounded Corners -->
+    <div class="rad">
+      <h2>Rounded Corners</h2>
+      <p>
+        За допомогою властивості CSS <strong>border-radius</strong> ви можете
+        надати будь-якому елементу "заокруглені кути".
+      </p>
+    </div>
+    <hr />
+
+    <!-- Border Images -->
+    <div class="borderimg">
+      <h2>Border Images</h2>
+      <p>
+        За допомогою властивості CSS <strong>border-image</strong> ви можете
+        встановити зображення, яке використовуватиметься як межа навколо
+        елемента.
+      </p>
+      <p>Ось вихідне зображення:</p>
+      <img src="img/border.png" />
+    </div>
+    <hr />
+
+    <!-- Multiple Backgrounds -->
+    <div>
+      <h2>Multiple Backgrounds</h2>
+      <p>
+        CSS дозволяє додавати кілька фонових зображень для елемента за допомогою
+        властивості background-image.
+      </p>
+      <div class="background-example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>
+          Різні фонові зображення розділяються комами, а зображення накладаються
+          одне на одне, де перше зображення знаходиться ближче до глядача.
+        </p>
+        <p>
+          У прикладі є два фонові зображення, перше зображення квітки (вирівняне
+          за нижнім і правим краєм), а друге зображення — паперовий фон
+          (вирівняне за верхнім лівим кутом)
+        </p>
+      </div>
+      <p>Властивість CSS background-clip визначає область малювання фону.</p>
+    </div>
+    <hr />
+
+    <!-- Colors -->
+    <div>
+      <h2>Colors</h2>
+      <p class="def-colors">
+        CSS підтримує понад 140 назв кольорів, значення HEX, RGB, RGBA (red,
+        green, blue, alpha), HSL (hue, saturation, lightness), HSLA (hue,
+        saturation, lightness, alpha) та непрозорість (opacity), також є ключові
+        слова transparent (прозорий), currentcolor (поточний колір) і inherit
+        (успадкувати).
+      </p>
+    </div>
+    <hr />
+
+    <!-- Text Effects -->
+    <div>
+      <h2>Text Effects</h2>
+      <p>
+        Text Overflow (Переповнення тексту), Word Wrap (перенесення слів), Line
+        Breaking Rules (правила розриву рядків), and Writing Modes (режими
+        написання).
+      </p>
+
+      <h3>text-overflow</h3>
+      <h4>text-overflow: clip:</h4>
+      <p class="test1">This is some long text that will not fit in the box</p>
+
+      <h4>text-overflow: ellipsis:</h4>
+      <p class="test2">This is some long text that will not fit in the box</p>
+      <p>+ *:hover { overflow: visible; }</p>
+
+      <h3>word-wrap</h3>
+      <p>
+        Властивість CSS word-wrap дозволяє розбивати довгі слова та переносити
+        їх на наступний рядок.
+      </p>
+      <p class="test3">
+        This paragraph contains a very long word:
+        thisisaveryveryveryveryveryverylongword. The long word will break and
+        wrap to the next line.
+      </p>
+      <p class="test4">
+        This paragraph contains a very long word:
+        thisisaveryveryveryveryveryverylongword. The long word will break and
+        wrap to the next line.
+      </p>
+
+      <h3>word-break</h3>
+      <p>Властивість CSS word-break визначає правила розриву рядків.</p>
+      <p class="test5">
+        This paragraph contains some text. This line will-break-at-hyphens.
+      </p>
+      <p class="test6">
+        This paragraph contains some text. The lines will break at any
+        character.
+      </p>
+
+      <h3>writing-mode</h3>
+      <p>
+        Властивість CSS writing-mode визначає, горизонтально чи вертикально
+        розміщувати рядки тексту.
+      </p>
+      <p>
+        Деякий текст із
+        <span class="test7">vertical-rl</span> режимом написання.
+      </p>
+      <h3>text-justify</h3>
+      <p class="test8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam
+        quibusdam earum quaerat numquam culpa enim? Rerum architecto
+        perspiciatis debitis cupiditate! Culpa earum quis harum vel minus
+        consectetur provident cum.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Web Fonts -->
+    <div class="other-font">
+      <h2>Web Fonts</h2>
+      <p>
+        Веб-шрифти дозволяють веб-дизайнерам використовувати шрифти, які не
+        встановлені на комп’ютері користувача.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Tooltip -->
+    <div>
+      <h2>Tooltip (Підказка)</h2>
+      <p>
+        Підказка часто використовується для вказівки додаткової інформації про
+        щось, коли користувач наводить вказівник миші на елемент
+      </p>
+      <div class="tooltip">
+        Наведіть на мене
+        <span class="tooltiptext">Текст підказки</span>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Styling Images -->
+    <div>
+      <h2>Styling Images</h2>
+      <p>Rounded Imagesp</p>
+      <p>border</p>
+      <p>Responsive Images</p>
+      <p></p>
+      <div class="clearfix">
+        <img
+          src="img/paris.jpg"
+          alt="Paris"
+          id="bor-rad1"
+          width="300"
+          height="300"
+        />
+        <img
+          src="img/paris.jpg"
+          alt="Paris"
+          id="bor-rad2"
+          width="300"
+          height="300"
+        />
+      </div>
+
+      <div class="polaroid">
+        <img src="img/img_5terre.jpg" alt="5 Terre" style="width: 100%" />
+        <div class="container">
+          <p>Cinque Terre</p>
+        </div>
+      </div>
+
+      <h3>Image Filters</h3>
+      <div class="clearfix">
+        <div class="pol">
+          <img
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>Оригінал</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="blur"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>Blur</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="brightness"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>brightness</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="contrast"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>contrast</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="grayscale"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>grayscale</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="huerotate"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>huerotate</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="invert"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>invert</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="opacity"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>opacity</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="saturate"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>saturate</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="sepia"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>sepia</p>
+          </div>
+        </div>
+
+        <div class="pol">
+          <img
+            class="shadow"
+            src="img/pineapple.jpg"
+            alt="Pineapple"
+            width="300"
+            height="300"
+          />
+          <div class="container">
+            <p>shadow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Image Reflection -->
+    <div>
+      <h2>Image Reflection</h2>
+      <p>
+        Властивість box-reflect використовується для створення відображення
+        зображення.
+      </p>
+      <img class="reflex" src="img/img_flwr.gif" />
+      <p class="half">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aperiam
+        illum earum repudiandae sit aut cupiditate accusamus, libero obcaecati
+        quam excepturi mollitia dolor ratione velit culpa omnis veritatis, rerum
+        repellendus!
+      </p>
+    </div>
+    <hr />
+
+    <!-- The object-fit Property -->
+    <div>
+      <h2>The object-fit Property</h2>
+      <p>
+        Властивість CSS object-fit використовується для визначення того, як
+        &lt;img&gt; або &lt;video&gt; слід змінювати розмір, щоб відповідати
+        його контейнеру.
+      </p>
+      <ul>
+        <li>
+          <em>fill</em> - Це за умовчанням. Зображення змінюється, щоб заповнити
+          заданий розмір. За потреби зображення буде розтягнуто або зім’ято, щоб
+          підходити
+        </li>
+        <li>
+          <em>contain</em> - Зображення зберігає співвідношення сторін, але його
+          розмір змінюється відповідно до вказаного розміру
+        </li>
+        <li>
+          <em>cover</em> - Зображення зберігає своє співвідношення сторін і
+          заповнює заданий розмір. Зображення буде обрізано відповідно до
+          розміру
+        </li>
+        <li><em>none</em> - Розмір зображення не змінюється</li>
+        <li>
+          <em>scale-down</em> - зображення зменшено до найменшої версії
+          <em>none</em> або <em>contain</em>
+        </li>
+      </ul>
+      <div class="clearfix">
+        <div class="pol">
+          <div class="fit1">
+            <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+          </div>
+          <div class="container">
+            <p>fill</p>
+          </div>
+        </div>
+        <div class="pol">
+          <div class="fit2">
+            <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+          </div>
+          <div class="container">
+            <p>contain</p>
+          </div>
+        </div>
+        <div class="pol">
+          <div class="fit3">
+            <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+          </div>
+          <div class="container">
+            <p>cover</p>
+          </div>
+        </div>
+        <div class="pol">
+          <div class="fit4">
+            <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+          </div>
+          <div class="container">
+            <p>none</p>
+          </div>
+        </div>
+        <div class="pol">
+          <div class="fit5">
+            <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+          </div>
+          <div class="container">
+            <p>scale-down</p>
+          </div>
+        </div>
+      </div>
+      <h3>The object-position Property</h3>
+      <p>
+        Властивість CSS object-position використовується для визначення того, як
+        &lt;img&gt; або &lt;video&gt; має розташовуватися в контейнері.
+      </p>
+      <div class="pos">
+        <img src="img/paris.jpg" alt="Pineapple" width="300" height="300" />
+      </div>
+      <pre>
+        img {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+          object-position: 15% 100%;
+        }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Masking -->
+    <div>
+      <h2>Masking</h2>
+      <p>
+        За допомогою маскування CSS ви створюєте шар маски, який розміщуєте над
+        елементом, щоб частково або повністю приховати частини елемента.
+      </p>
+      <p>
+        Ось зображення маски (зображення PNG), яке ми будемо використовувати
+      </p>
+      <img src="img/w3logo.png" alt="logo-w3" />
+      <p>Ось основне зображення</p>
+      <img src="img/img_5terre.jpg" alt="Cinque Terre" />
+      <p>
+        Тепер ми застосовуємо зображення маски (зображення PNG вище) як шар
+        маски для зображення
+      </p>
+      <div class="mask1">
+        <img
+          src="img/img_5terre.jpg"
+          alt="Cinque Terre"
+          width="600"
+          height="400"
+        />
+      </div>
+    </div>
+    <hr />
+
+    <!-- Buttons -->
+    <div>
+      <h2>Buttons</h2>
+
+      <button>Default Button</button>
+      <a href="#" class="button">Link Button</a>
+      <button class="button">Button</button>
+      <input type="button" class="button" value="Input Button" />
+
+      <div class="btn-group">
+        <button class="button button1">Green 10px</button>
+        <button class="button button2">Blue 12px</button>
+        <button class="button button3">Red 16px</button>
+      </div>
+      <div class="btn-group">
+        <button class="button button4">Gray 20px</button>
+        <button class="button button5">Black 24px</button>
+
+        <button class="button disabled">Disabled Button</button>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Pagination -->
+    <div>
+      <h2>Pagination Examples</h2>
+      <div class="center">
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#" class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+      <p>
+        Ще один варіант розбиття на сторінки — це так звані
+        <span lang="en">«breadcrumbs»</span>
+        (панірувальні сухарі)
+      </p>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Multiple Columns -->
+    <div>
+      <h2>Multiple Columns</h2>
+      <p>
+        Макет із кількома стовпцями CSS дозволяє легко встановити кілька
+        стовпців тексту, як у газетах
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 23%">Property</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><em>column-count</em></td>
+            <td>
+              Визначає кількість стовпців, на які має бути розділений елемент
+            </td>
+          </tr>
+          <tr>
+            <td><em>column-fill</em></td>
+            <td>Визначає спосіб заповнення стовпців</td>
+          </tr>
+          <tr>
+            <td><em>column-gap</em></td>
+            <td>Визначає проміжок між колонками</td>
+          </tr>
+          <tr>
+            <td><em>column-rule</em></td>
+            <td>
+              Скорочена властивість для встановлення всіх властивостей
+              column-rule-*
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <em>column-rule-color</em>
+            </td>
+            <td>Визначає колір лінії між стовпцями</td>
+          </tr>
+          <tr>
+            <td>
+              <em>column-rule-style</em>
+            </td>
+            <td>Визначає стиль правила між стовпцями</td>
+          </tr>
+          <tr>
+            <td>
+              <em>column-rule-width</em>
+            </td>
+            <td>Визначає ширину лінії між стовпцями</td>
+          </tr>
+          <tr>
+            <td><em>column-span</em></td>
+            <td>Визначає, скільки стовпців має охоплювати елемент</td>
+          </tr>
+          <tr>
+            <td><em>column-width</em></td>
+            <td>Визначає пропоновану оптимальну ширину для стовпців</td>
+          </tr>
+          <tr>
+            <td><em>columns</em></td>
+            <td>
+              Скорочена властивість для встановлення ширини стовпця та кількості
+              стовпців
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="newspaper">
+        <h3>Створення кількох стовпців</h3>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Vel illum dolore eu feugiat
+        nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+        blandit praesent luptatum zzril delenit augue duis dolore te feugait
+        nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue
+        nihil imperdiet doming id quod mazim placerat facer possim assum.
+      </div>
+    </div>
+    <hr />
+
+    <!-- User Interface -->
+    <div>
+      <h2>User Interface</h2>
+      <h3>Resizing</h3>
+      <div class="resz">
+        <p>
+          Дозвольте користувачеві змінювати розмір лише ширини цього елемента.
+        </p>
+        <p>Натисніть і перетягніть нижній правий кут цього елемента.</p>
+        <p>
+          У багатьох браузерах <em>textarea</em> змінюється за замовчуванням.
+          Можна використати властивість resize, щоб вимкнути зміну розміру.
+        </p>
+      </div>
+      <h3>Outline Offset</h3>
+      <div class="out-ex1">
+        Властивість outline-offset додає проміжок між outline (контуром) і краєм
+        або межею елемента. Контур НЕ є частиною розмірів елемента; ширина
+        контуру не впливає на загальну ширину та висоту елемента. Контур
+        малюється за межами елемента та може перекривати інший вміст.
+      </div>
+    </div>
+    <hr />
+
+    <!-- Box Sizing -->
+    <div>
+      <h2>Box Sizing</h2>
+      <p>
+        Властивість CSS box-sizing дозволяє нам включити відступ і рамку в
+        загальну ширину і висоту елемента.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 20%">Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>content-box</td>
+            <td>
+              За замовчуванням. Властивості ширини та висоти (і властивості
+              min/max) включають лише вміст. Рамки та відступи не включені
+            </td>
+          </tr>
+          <tr>
+            <td>border-box</td>
+            <td>
+              Властивості ширини та висоти (і властивості min/max) включають
+              вміст, відступи та межі
+            </td>
+          </tr>
+          <tr>
+            <td>initial</td>
+            <td>Встановлює для цієї властивості значення за умовчанням.</td>
+          </tr>
+          <tr>
+            <td>inherit</td>
+            <td>Успадковує цю властивість від батьківського елемента.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <!-- Media Queries -->
+    <div>
+      <h2>Media Queries</h2>
+      <h3>Media Query Syntax</h3>
+      <pre>
+        @media not|only mediatype and (expressions) {
+          CSS-Code;
+        }
+      </pre>
+      <h3>Media Types</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 25%">Value</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>all</td>
+            <td>Використовується для пристроїв усіх типів носіїв</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>Використовується для принтерів</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>
+              Використовується для екранів комп’ютерів, планшетів, смартфонів
+              тощо.
+            </td>
+          </tr>
+          <tr>
+            <td>speech</td>
+            <td>
+              Використовується для програм зчитування з екрана, які "читають"
+              сторінку вголос
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Example</p>
+      <pre>
+        @media screen and (min-width: 480px) {
+          #leftsidebar {width: 200px; float: left;}
+          #main {margin-left: 216px;}
+        }
+      </pre>
+      <p>
+        Медіа-запити є популярною технікою для доставки індивідуальної таблиці
+        стилів на різні пристрої.
+      </p>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

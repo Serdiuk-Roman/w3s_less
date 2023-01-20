@@ -1,0 +1,9 @@
+CSS Dropdowns
+CSS Image Gallery
+CSS Forms
+
+from w3schools
+
+https://www.w3schools.com/css/css_dropdowns.asp
+https://www.w3schools.com/css/css_image_gallery.asp
+https://www.w3schools.com/css/css_form.asp

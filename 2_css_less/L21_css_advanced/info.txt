@@ -1,0 +1,41 @@
+Rounded Corners
+Border Images
+Multiple Backgrounds
+CSS Colors
+Text Effects
+Web Fonts
+Tooltip
+Styling Images
+Image Reflection
+The object-fit Property
+The object-position Property
+Masking
+Buttons
+Pagination Examples
+Multiple Columns
+User Interface
+Box Sizing
+Media Queries
+Media Queries - Examples
+
+from w3schools
+
+https://www.w3schools.com/css/css3_borders.asp
+https://www.w3schools.com/css/css3_border_images.asp
+https://www.w3schools.com/css/css3_backgrounds.asp
+https://www.w3schools.com/css/css3_colors.asp
+https://www.w3schools.com/css/css3_text_effects.asp
+https://www.w3schools.com/css/css3_fonts.asp
+https://www.w3schools.com/css/css_tooltip.asp
+https://www.w3schools.com/css/css3_images.asp
+https://www.w3schools.com/css/css3_image_reflection.asp
+https://www.w3schools.com/css/css3_object-fit.asp
+https://www.w3schools.com/css/css3_object-position.asp
+https://www.w3schools.com/css/css3_masking.asp
+https://www.w3schools.com/css/css3_buttons.asp
+https://www.w3schools.com/css/css3_pagination.asp
+https://www.w3schools.com/css/css3_multiple_columns.asp
+https://www.w3schools.com/css/css3_user_interface.asp
+https://www.w3schools.com/css/css3_box-sizing.asp
+https://www.w3schools.com/css/css3_mediaqueries.asp
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp

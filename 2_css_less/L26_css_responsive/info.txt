@@ -1,0 +1,21 @@
+Responsive Web Design:
+    Introduction
+    Viewport
+    Grid-View
+    Media Queries
+    Images
+    Videos
+    Frameworks
+    Templates
+
+
+from w3schools
+
+https://www.w3schools.com/css/css_rwd_intro.asp
+https://www.w3schools.com/css/css_rwd_viewport.asp
+https://www.w3schools.com/css/css_rwd_grid.asp
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/css/css_rwd_images.asp
+https://www.w3schools.com/css/css_rwd_videos.asp
+https://www.w3schools.com/css/css_rwd_frameworks.asp
+https://www.w3schools.com/css/css_rwd_templates.asp

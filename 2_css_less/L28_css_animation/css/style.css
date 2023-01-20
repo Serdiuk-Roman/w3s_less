@@ -1,0 +1,154 @@
+/* Обнуление
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+-------------------- */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #e6ffcc;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+footer {
+  height: 240px;
+  background-color: lightgrey;
+}
+hr {
+  margin: 32px 0px;
+}
+
+div.base-box {
+  width: 256px;
+  height: 64px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#rotate-div {
+  transform: rotate(20deg);
+}
+div#scale-div {
+  margin: 150px;
+  border: 1px solid black;
+  transform: scale(2, 3);
+}
+div#skew-div {
+  transform: skew(20deg, 10deg);
+}
+div#matrix-div {
+  transform: matrix(1, -0.1, 0.5, 1, 150, 0);
+}
+
+div#rotate2D {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  transform: rotate(-10deg);
+}
+div#rotate3D {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  transform: rotateY(45deg);
+}
+div#trans-w {
+  transition: width 2s;
+}
+div#trans-w:hover {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+
+.tr-tr {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.tr-tr:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+div.anim {
+  width: 120px;
+  text-align: center;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 3s infinite;
+  animation-direction: alternate;
+}
+
+#div1 {
+  animation-timing-function: linear;
+}
+#div2 {
+  animation-timing-function: ease;
+}
+#div3 {
+  animation-timing-function: ease-in;
+}
+#div4 {
+  animation-timing-function: ease-out;
+}
+#div5 {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+    background-color: red;
+  }
+  to {
+    left: 360px;
+    background-color: green;
+  }
+}

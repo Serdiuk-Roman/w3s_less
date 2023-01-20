@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <title>HTML Canvas Graphics</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      canvas {
+        width: 640px;
+        height: 480px;
+        border: 1px solid #611661;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>HTML Canvas Graphics</h1>
+      <canvas id="myCanvas"></canvas>
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 640, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 200, 150, 160);
+
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+
+        // line
+        ctx.moveTo(0, 0);
+        ctx.lineTo(240, 100);
+        ctx.stroke();
+
+        // Circle
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.fillStyle = "green";
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 100, 100);
+
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World", 10, 50);
+      </script>
+    </article>
+  </body>
+</html>

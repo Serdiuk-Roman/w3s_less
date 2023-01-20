@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <title>HTML Forms</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      table {
+        border: thin solid #aaa;
+      }
+      td,
+      th {
+        text-align: center;
+        border: thin solid #aaa;
+        padding: 8px;
+      }
+      div {
+        border: 2px solid #611661;
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>HTML Forms</h1>
+
+      <form action="#" target="_blank" method="post" autocomplete="on">
+        <!--Text-->
+        <div>
+          <h2>Text input fields</h2>
+          <label for="fname">First name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            disabled
+          /><br />
+          <label for="lname">Last name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            autofocus
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <h2>Input Type Password</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" value="John" /><br />
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" name="pwd" />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <h2>Input Type Email</h2>
+          <label for="email">Enter your email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="user@example.com"
+          />
+        </div>
+
+        <!-- URL -->
+        <div>
+          <h2>Input Type Url</h2>
+          <label for="homepage">Add your homepage:</label>
+          <input type="url" id="homepage" name="homepage" />
+        </div>
+
+        <!-- Search -->
+        <div>
+          <h2>Input Type Search</h2>
+          <p>
+            input type="search" використовується для полів пошуку (поле пошуку
+            поводиться як звичайне текстове поле).
+          </p>
+          <label for="gsearch">Search Google:</label>
+          <input type="search" id="gsearch" name="gsearch" />
+        </div>
+
+        <!-- Hidden -->
+        <div>
+          <h2>Input Type Hidden</h2>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <input type="hidden" id="custId" name="custId" value="3487" />
+        </div>
+
+        <!-- TextArea -->
+        <div>
+          <h2>Textarea</h2>
+          <textarea name="message" rows="5" cols="30">
+The cat was playing in the garden.</textarea
+          ><textarea name="message" rows="5" cols="30" readonly>
+The cat was playing in the garden.</textarea
+          >
+        </div>
+
+        <!-- Telephone -->
+        <div>
+          <h2>Input Type Tel</h2>
+          <label for="phone">Enter a phone number:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123-45-678"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            required
+          /><br />
+          <small>Format: 123-45-678</small>
+        </div>
+
+        <!-- Fieldset -->
+        <div>
+          <h2><b>Fieldset</b> and <b>Legend</b></h2>
+          <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="John" /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Doe" /><br />
+          </fieldset>
+        </div>
+
+        <!-- Radio -->
+        <div>
+          <h2>Radio Buttons</h2>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+        </div>
+
+        <!-- ChechBox -->
+        <div>
+          <h2>Checkboxes</h2>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> I have a bike</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2"> I have a car</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3"> I have a boat</label>
+        </div>
+
+        <!-- Select -->
+        <div>
+          <h2>The select Element</h2>
+          <label for="cars">Choose a car:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+            <option value="ferrari ">Ferrari</option>
+            <option value="porsche">Porsche</option>
+            <option value="Opel">Opel</option>
+          </select>
+
+          <p>The select with size, multiple and optgroup</p>
+          <label for="cars2">Choose a car:</label>
+          <select id="cars2" name="cars2" size="5" multiple>
+            <optgroup label="Italian Cars">
+              <option value="fiat">Fiat</option>
+              <option value="ferrari ">Ferrari</option>
+            </optgroup>
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+              <option value="bmw">BMW</option>
+              <option value="porsche">Porsche</option>
+              <option value="Opel">Opel</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Datalist -->
+        <div>
+          <h2>Datalist</h2>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </div>
+
+        <!-- Color -->
+        <div>
+          <h2>Input Type Color</h2>
+          <label for="favcolor">Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor" value="#ff00ff" />
+        </div>
+
+        <!-- Date -->
+        <div>
+          <h2>Input Type Date</h2>
+          <label for="birthday">Birthday with min and max:</label>
+          <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            min="2022-10-25"
+            max="2022-10-30"
+          />
+        </div>
+
+        <!-- Datetime -->
+        <div>
+          <h2>Input Type Datetime-local</h2>
+          <label for="birthdaytime">Birthday (date and time):</label>
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+        </div>
+
+        <!-- Month -->
+        <div>
+          <h2>Input Type Month</h2>
+          <label for="bdaymonth">Birthday (month and year):</label>
+          <input type="month" id="bdaymonth" name="bdaymonth" />
+        </div>
+
+        <!-- Week -->
+        <div>
+          <h2>Input Type Week</h2>
+          <label for="week">Select a week:</label>
+          <input type="week" id="week" name="week" />
+        </div>
+
+        <!-- Time -->
+        <div>
+          <h2>Input Type Time</h2>
+          <label for="appt">Select a time:</label>
+          <input type="time" id="appt" name="appt" />
+        </div>
+
+        <!-- File -->
+        <div>
+          <h2>Input Type File</h2>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile" />
+        </div>
+
+        <!-- Number -->
+        <div>
+          <h2>Input Type Number</h2>
+          <label for="quantity">Quantity (between 1 and 100):</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="100"
+          />
+        </div>
+
+        <!-- Range -->
+        <div>
+          <h2>Input Type Range</h2>
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50" />
+          <br />
+          <label for="vol2">Volume (between 0 and 50, step 10):</label>
+          <input
+            type="range"
+            id="vol2"
+            name="vol2"
+            min="0"
+            max="50"
+            step="10"
+          />
+        </div>
+
+        <!-- Button -->
+        <div>
+          <h2>Button</h2>
+          <button type="button" onclick="alert('Hello World!')">
+            Click Me!
+          </button>
+        </div>
+
+        <!-- Submit Image -->
+        <div>
+          <h2>Display an Image as the Submit button</h2>
+          <p>
+            The input type="image" sends the X and Y coordinates of the click
+            that activated the image button.
+          </p>
+          <input
+            type="image"
+            src="img/img_submit.gif"
+            alt="Submit"
+            width="48"
+            height="48"
+          />
+        </div>
+
+        <!-- Submit and Reset -->
+        <div>
+          <h2>Submit and Reset Button</h2>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Submit" />
+          <br />
+          <input type="reset" />
+          <input type="submit" />
+          <br />
+          <input
+            type="submit"
+            formaction="/action_page2.php"
+            value="Submit as Admin"
+          />
+        </div>
+      </form>
+
+      <h2>Input Restrictions</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 20%">Attribute</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>checked</td>
+            <td>
+              Вказує, що поле введення має бути попередньо вибрано під час
+              завантаження сторінки (для type="checkbox" або type="radio")
+            </td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>Вказує, що поле введення має бути вимкнене</td>
+          </tr>
+          <tr>
+            <td>max</td>
+            <td>Визначає максимальне значення для поля введення</td>
+          </tr>
+          <tr>
+            <td>maxlength</td>
+            <td>Визначає максимальну кількість символів для поля введення</td>
+          </tr>
+          <tr>
+            <td>min</td>
+            <td>Визначає мінімальне значення для поля введення</td>
+          </tr>
+          <tr>
+            <td>pattern</td>
+            <td>Визначає регулярний вираз для перевірки вхідного значення</td>
+          </tr>
+          <tr>
+            <td>readonly</td>
+            <td>
+              Вказує, що поле введення лише для читання (неможливо змінити)
+            </td>
+          </tr>
+          <tr>
+            <td>required</td>
+            <td>Вказує, що поле введення обов’язкове (має бути заповнене)</td>
+          </tr>
+          <tr>
+            <td>size</td>
+            <td>Визначає ширину (в символах) поля введення</td>
+          </tr>
+          <tr>
+            <td>step</td>
+            <td>Визначає допустимі інтервали чисел для поля введення</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>Визначає значення за умовчанням для поля введення</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </article>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+CSS Outline
+Outline Width
+Outline Color
+Outline Shorthand
+Outline Offset
+
+from w3schools
+
+https://www.w3schools.com/css/css_outline.asp
+https://www.w3schools.com/css/css_outline_width.asp
+https://www.w3schools.com/css/css_outline_color.asp
+https://www.w3schools.com/css/css_outline_shorthand.asp
+https://www.w3schools.com/css/css_outline_offset.asp

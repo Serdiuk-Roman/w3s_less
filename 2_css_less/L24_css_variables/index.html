@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Variables</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Variables</h1>
+    <p>Функція var() використовується для вставки значення змінної CSS.</p>
+    <hr />
+
+    <!-- The var() Function -->
+    <div>
+      <h2>The var() Function</h2>
+      <p>Syntax of the var() Function</p>
+      <pre><strong>
+        var(--name, value)
+      </strong></pre>
+      <p>
+        Змінні CSS мають доступ до DOM, що означає, що ви можете створювати
+        змінні з локальною або глобальною областю видимості, змінювати змінні за
+        допомогою JavaScript і змінювати змінні на основі медіа-запитів.
+      </p>
+      <p>
+        Хороший спосіб використовувати змінні CSS, коли мова йде про кольори
+        вашого дизайну. Замість того, щоб копіювати та вставляти ті самі кольори
+        знову і знову, ви можете розмістити їх у змінних.
+      </p>
+      <h4>Example:</h4>
+      <pre>
+        :root {
+          --blue: #6495ed;
+          --white: #faf0e6;
+        }
+        body { background-color: var(--blue); }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Overriding Variables -->
+    <div>
+      <h2>Overriding Variables - Перевизначення змінних</h2>
+      <p>
+        З попередньої сторінки ми дізналися, що глобальні змінні можна
+        отримати/використовувати через весь документ, тоді як локальні змінні
+        можна використовувати лише всередині селектора, де вони оголошені.
+      </p>
+      <pre>
+    button {
+      --blue: #0000ff; /* local variable will override global */
+      background-color: var(--white);
+      color: var(--blue);
+      border: 1px solid var(--blue);
+      padding: 5px;
+    }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Change Variables With JavaScript -->
+    <div>
+      <h2>Change Variables With JavaScript</h2>
+      <pre>
+  &lt;script&gt;
+    // Get the root element
+    var r = document.querySelector(':root');
+
+    // Create a function for getting a variable value
+    function myFunction_get() {
+      // Get the styles (properties and values) for the root
+      var rs = getComputedStyle(r);
+      // Alert the value of the --blue variable
+      alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+    }
+
+    // Create a function for setting a variable value
+    function myFunction_set() {
+      // Set the value of variable --blue to another value (in this case "lightblue")
+      r.style.setProperty('--blue', 'lightblue');
+    }
+    &lt;/script&gt;
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Using Variables in Media Queries -->
+    <div>
+      <h2>Using Variables in Media Queries</h2>
+      <p>Тепер ми хочемо змінити значення змінної в медіа-запиті.</p>
+      <pre>
+        @media screen and (min-width: 450px) {
+          .container {
+            --fontsize: 50px;
+          }
+          :root {
+            --blue: lightblue;
+          }
+        }
+      </pre>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

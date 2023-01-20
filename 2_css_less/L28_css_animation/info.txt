@@ -1,0 +1,11 @@
+2D Transforms
+3D Transforms
+Transitions
+Animations
+
+from w3schools
+
+https://www.w3schools.com/css/css3_2dtransforms.asp
+https://www.w3schools.com/css/css3_3dtransforms.asp
+https://www.w3schools.com/css/css3_transitions.asp
+https://www.w3schools.com/css/css3_animations.asp

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <title>HTML API</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      #div1,
+      #div2,
+      #div3,
+      #div4 {
+        float: left;
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      section {
+        border: 1px solid pink;
+      }
+      #dnd_2 {
+        clear: both;
+      }
+      #gate {
+        cursor: pointer;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        width: 83px;
+        height: 46px;
+      }
+
+      #ball {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>HTML API</h1>
+      <!-- Geolocation -->
+      <section>
+        <h2>Geolocation</h2>
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+          var x = document.getElementById("demo");
+
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+              x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+          }
+
+          function showPosition(position) {
+            x.innerHTML =
+              "Latitude: " +
+              position.coords.latitude +
+              "<br>Longitude: " +
+              position.coords.longitude;
+          }
+
+          function showError(error) {
+            switch (error.code) {
+              case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation.";
+                break;
+              case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable.";
+                break;
+              case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out.";
+                break;
+              case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred.";
+                break;
+            }
+          }
+        </script>
+      </section>
+
+      <!-- Drag and Drop -->
+      <section>
+        <h2>Drag and Drop</h2>
+        <p>Drag the image back and forth between multiple divs.</p>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img
+            src="img/img_w3slogo.gif"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="drag1"
+            width="88"
+            height="31"
+          />
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <script>
+          function allowDrop(ev) {
+            ev.preventDefault();
+          }
+
+          function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+          }
+
+          function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+          }
+        </script>
+      </section>
+
+      <!-- Drag and Drop 2 -->
+      <section id="dnd_2">
+        <p>Перетащите мяч.</p>
+
+        <img src="img/soccer-gate.svg" id="gate" class="droppable" />
+
+        <img src="img/ball.svg" id="ball" />
+
+        <script>
+          let currentDroppable = null;
+
+          ball.onmousedown = function (event) {
+            let shiftX = event.clientX - ball.getBoundingClientRect().left;
+            let shiftY = event.clientY - ball.getBoundingClientRect().top;
+
+            ball.style.position = "absolute";
+            ball.style.zIndex = 1000;
+            document.body.append(ball);
+
+            moveAt(event.pageX, event.pageY);
+
+            function moveAt(pageX, pageY) {
+              ball.style.left = pageX - shiftX + "px";
+              ball.style.top = pageY - shiftY + "px";
+            }
+
+            function onMouseMove(event) {
+              moveAt(event.pageX, event.pageY);
+
+              ball.hidden = true;
+              let elemBelow = document.elementFromPoint(
+                event.clientX,
+                event.clientY
+              );
+              ball.hidden = false;
+
+              if (!elemBelow) return;
+
+              let droppableBelow = elemBelow.closest(".droppable");
+              if (currentDroppable != droppableBelow) {
+                if (currentDroppable) {
+                  // null если мы были не над droppable до этого события
+                  // (например, над пустым пространством)
+                  leaveDroppable(currentDroppable);
+                }
+                currentDroppable = droppableBelow;
+                if (currentDroppable) {
+                  // null если мы не над droppable сейчас, во время этого события
+                  // (например, только что покинули droppable)
+                  enterDroppable(currentDroppable);
+                }
+              }
+            }
+
+            document.addEventListener("mousemove", onMouseMove);
+
+            ball.onmouseup = function () {
+              document.removeEventListener("mousemove", onMouseMove);
+              ball.onmouseup = null;
+            };
+          };
+
+          function enterDroppable(elem) {
+            elem.style.background = "pink";
+          }
+
+          function leaveDroppable(elem) {
+            elem.style.background = "";
+          }
+
+          ball.ondragstart = function () {
+            return false;
+          };
+        </script>
+      </section>
+
+      <!-- Web Storage -->
+      <section>
+        <h2>Web Storage</h2>
+        <h3>LocalStorage</h3>
+        <script>
+          function clickCounter() {
+            if (typeof Storage !== "undefined") {
+              if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+              } else {
+                localStorage.clickcount = 1;
+              }
+              document.getElementById("result").innerHTML =
+                "You have clicked the button " +
+                localStorage.clickcount +
+                " time(s).";
+            } else {
+              document.getElementById("result").innerHTML =
+                "Sorry, your browser does not support web storage...";
+            }
+          }
+        </script>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result">Result</div>
+        <p>Click the button to see the counter increase.</p>
+        <p>
+          Close the browser tab (or window), and try again, and the counter will
+          continue to count (is not reset).
+        </p>
+        <hr />
+
+        <h3>SessionStorage</h3>
+        <script>
+          function clickCounter2() {
+            if (typeof Storage !== "undefined") {
+              if (sessionStorage.clickcount) {
+                sessionStorage.clickcount =
+                  Number(sessionStorage.clickcount) + 1;
+              } else {
+                sessionStorage.clickcount = 1;
+              }
+              document.getElementById("result2").innerHTML =
+                "You have clicked the button " +
+                sessionStorage.clickcount +
+                " time(s) in this session.";
+            } else {
+              document.getElementById("result2").innerHTML =
+                "Sorry, your browser does not support web storage...";
+            }
+          }
+        </script>
+
+        <p>
+          <button onclick="clickCounter2()" type="button">Click me!</button>
+        </p>
+        <div id="result2">Result</div>
+        <p>Click the button to see the counter increase.</p>
+        <p>
+          Close the browser tab (or window), and try again, and the counter is
+          reset.
+        </p>
+      </section>
+
+      <!-- Web Workers -->
+      <section>
+        <h2>Web Workers</h2>
+        <p>Count numbers: <output id="result3"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+
+        <p>
+          <strong>Note:</strong> Internet Explorer 9 and earlier versions do not
+          support Web Workers.
+        </p>
+
+        <script>
+          let w;
+
+          function startWorker() {
+            if (typeof Worker !== "undefined") {
+              if (typeof w == "undefined") {
+                w = new Worker("js/demo_workers.js");
+              }
+              w.onmessage = function (event) {
+                document.getElementById("result3").innerHTML = event.data;
+              };
+            } else {
+              document.getElementById("result3").innerHTML =
+                "Sorry, your browser does not support Web Workers...";
+            }
+          }
+
+          function stopWorker() {
+            w.terminate();
+            w = undefined;
+          }
+        </script>
+      </section>
+
+      <!-- SSE -->
+      <section>
+        <h2>Server-Sent Events</h2>
+      </section>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </article>
+  </body>
+</html>

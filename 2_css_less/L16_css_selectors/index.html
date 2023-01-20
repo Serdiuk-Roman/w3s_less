@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Selectors</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Selectors Advanced</h1>
+    <hr />
+
+    <!-- Combinators -->
+    <div>
+      <h2>Combinators</h2>
+      <p>Комбінатор - це щось, що пояснює зв'язок між селекторами.</p>
+      <p>
+        Селектор CSS може містити більше одного простого селектора. Між простими
+        селекторами ми можемо включити комбінатор.
+      </p>
+      <ul>
+        <li>селектор нащадка (space)</li>
+        <li>дочірній селектор (&gt;)</li>
+        <li>селектор сусіднього брата (+)</li>
+        <li>загальний селектор рідних братів (~)</li>
+      </ul>
+      <h3>Нащадок</h3>
+      <pre>
+        div p {
+          background-color: yellow;
+        }
+      </pre>
+      <p>Вибере усі елементи &lt;p&gt; всередині елементів &lt;div&gt;</p>
+      <h3>Дочірній</h3>
+      <pre>
+        div > p {
+          background-color: yellow;
+        }
+      </pre>
+      <p>
+        Вибирає всі елементи &lt;p&gt;, де батьківським є елемент &lt;div&gt;
+      </p>
+      <h3>Вибір сусіднього однорідного елемента</h3>
+      <p>
+        Сусідний однорідний селектор використовується для вибору елемента, який
+        знаходиться безпосередньо після іншого конкретного елемента.
+      </p>
+      <p>
+        Однорідні елементи повинні мати той самий батьківський елемент, а
+        «суміжні» означає «відразу наступні».
+      </p>
+      <pre>
+        div + p {
+          background-color: yellow;
+        }
+      </pre>
+      <p>
+        Вибирає перший елемент &lt;p&gt;, який розміщується відразу після
+        елементів &lt;div&gt;
+      </p>
+      <h3>Загальний селектор рідних елементів</h3>
+      <p>
+        Загальний селектор рідних елементів вибирає всі елементи, які є
+        наступними однорідними зазначеного елемента.
+      </p>
+      <pre>
+        div ~ p {
+          background-color: yellow;
+        }
+      </pre>
+      <p>Вибирає кожен елемент &lt;p&gt;, якому передує елемент &lt;div&gt;</p>
+    </div>
+    <hr />
+
+    <!-- Pseudo-classes -->
+    <div>
+      <h2>Pseudo-classes</h2>
+      <p>
+        Псевдоклас використовується для визначення особливого стану елемента.
+      </p>
+      <pre>
+        selector:pseudo-class {
+          property: value;
+        }
+      </pre>
+      <p>
+        Примітка: a:hover ПОВИНЕН стояти після a:link і a:visited у визначенні
+        CSS, щоб бути ефективним! a:active ПОВИНЕН стояти після a:hover у
+        визначенні CSS, щоб бути ефективним!
+      </p>
+    </div>
+    <hr />
+
+    <!-- Pseudo-elements -->
+    <div>
+      <h2>Pseudo-elements</h2>
+      <p>
+        Псевдоелементи CSS використовується для стилізації визначених частин
+        елемента.
+      </p>
+      <pre>
+        selector<strong>::</strong>pseudo-element {
+          property: value;
+        }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Attribute Selectors -->
+    <div>
+      <h2>Attribute Selectors</h2>
+      <p>
+        Є можливість стилізувати елементи HTML, які мають певні атрибути або
+        значення атрибутів.
+      </p>
+      <pre>        selector[<strong>attribute</strong>] {property: value;}</pre>
+      <pre>
+        selector[<strong>attribute="value"</strong>] {property: value;}</pre
+      >
+      <p>
+        Селектор [attribute~="value"] використовується для вибору елементів зі
+        значенням атрибута, що містить вказане слово, яке розділене пробілами.
+      </p>
+      <p>
+        Селектор [attribute|="value"] використовується для вибору елементів із
+        вказаним атрибутом, значення якого може бути точно вказаним значенням
+        або вказаним значенням, після якого стоїть дефіс (-). <br />
+        Примітка. Значення має бути цілим словом, або окремо, як class="top",
+        або після якого стоїть дефіс (-), як class="top-text".
+      </p>
+      <p>
+        Селектор [attribute^="value"] використовується для вибору елементів із
+        зазначеним атрибутом, значення якого починається з указаного значення.
+        <br />
+        Примітка. Значення не повинно бути цілим словом!
+      </p>
+      <p>
+        Селектор [attribute$="value"] використовується для вибору елементів,
+        значення атрибута яких закінчується вказаним значенням. <br />
+        Примітка. Значення не повинно бути цілим словом!
+      </p>
+      <p>
+        Селектор [attribute*="value"] використовується для вибору елементів,
+        значення атрибута яких містить вказане значення. <br />
+        Примітка. Значення не повинно бути цілим словом!
+      </p>
+      <p>
+        <strong
+          >Селектори атрибутів можуть бути корисними для стилізації форм без
+          класу чи ідентифікатора</strong
+        >
+      </p>
+    </div>
+    <hr />
+
+    <!-- Specificity Специфіка -->
+    <div>
+      <h2>Specificity (Специфіка)</h2>
+      <p>
+        Якщо є два або більше правил CSS, які вказують на той самий елемент,
+        селектор із найвищим значенням специфічності «переможе», а його
+        оголошення стилю буде застосовано до цього елемента HTML.
+      </p>
+      <p>
+        Існує чотири категорії, які визначають рівень специфічності селектора
+      </p>
+      <ul>
+        <li>
+          <em>1000 балів - </em><strong>Inline styles</strong> <br />Наприклад:
+          &lt;h1 style="color: pink;"&gt;
+        </li>
+        <li>
+          <em>100 балів - </em><strong>IDs</strong> <br />Наприклад: #navbar
+        </li>
+        <li>
+          <em>10 балів - </em
+          ><strong>Classes, pseudo-classes, attribute selectors</strong>
+          <br />Наприклад: .test, :hover, [href]
+        </li>
+        <li>
+          <em>1 бал - </em><strong>Elements and pseudo-elements</strong>
+          <br />Наприклад: h1, :before
+        </li>
+      </ul>
+      <p>
+        З цього правила є один виняток: якщо ви використовуєте правило
+        !important, воно навіть замінить вбудовані стилі!
+      </p>
+      <p>Рівна Specificity: перемагає останнє правило</p>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

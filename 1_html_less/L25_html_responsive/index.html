@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <title>HTML Responsive Web Design</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Verdana;
+        color: #555;
+      }
+
+      .menu {
+        float: left;
+        width: 15%;
+        text-align: center;
+      }
+
+      .menu a {
+        background-color: #e5e5e5;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+      }
+
+      .main {
+        float: left;
+        width: 65%;
+        padding: 0 20px;
+      }
+
+      .right {
+        background-color: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+
+      .footer {
+        clear: both;
+        background-color: #e5e5e5;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+      }
+
+      .img-right {
+        max-width: 50%;
+        height: auto;
+        float: right;
+      }
+
+      .main-title {
+        background-color: #e5e5e5;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .menu-block {
+        overflow: auto;
+      }
+
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>
+      HTML has several semantic elements that define the different parts of a
+      web page:
+    </h2>
+    <p>
+      Responsive web design is about creating web pages that look good on all
+      devices!
+    </p>
+    <p>
+      A responsive web design will automatically adjust for different screen
+      sizes and viewports.
+    </p>
+
+    <div class="main-title">
+      <h1>Hello World</h1>
+    </div>
+
+    <div class="menu-block">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+
+      <div class="main">
+        <h2>Responsive Image</h2>
+        <img class="img-right" src="img/img_girl.jpg" alt="girl" />
+        <p>
+          "max-width:100%" prevents the image from getting bigger than its
+          original size. However, if you make the browser window smaller, the
+          image will still scale down.
+        </p>
+        <p>+ float: right</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+          aperiam rerum autem suscipit fugit quidem itaque, repellendus qui cum
+          asperiores minus quae consectetur, placeat aspernatur doloribus quasi,
+          eligendi nemo. Sequi? Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Rem maxime molestiae vero corrupti, mollitia
+          eligendi harum velit unde, explicabo distinctio similique quibusdam
+          optio sint exercitationem laudantium consequuntur consequatur
+          accusamus! Dolores!
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="footer">© copyright w3schools.com</div>
+  </body>
+</html>

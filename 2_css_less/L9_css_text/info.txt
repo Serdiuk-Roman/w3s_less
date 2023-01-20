@@ -1,0 +1,15 @@
+CSS Text
+Alignment
+Decoration
+Transformation
+CSS Text Spacing
+Text Shadow
+
+from w3schools
+
+https://www.w3schools.com/css/css_text.asp
+https://www.w3schools.com/css/css_text_align.asp
+https://www.w3schools.com/css/css_text_decoration.asp
+https://www.w3schools.com/css/css_text_transformation.asp
+https://www.w3schools.com/css/css_text_spacing.asp
+https://www.w3schools.com/css/css_text_shadow.asp

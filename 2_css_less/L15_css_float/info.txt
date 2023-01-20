@@ -1,0 +1,5 @@
+Float and clear
+
+from w3schools
+
+https://www.w3schools.com/css/css_float.asp

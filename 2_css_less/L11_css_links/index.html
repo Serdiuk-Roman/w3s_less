@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Links</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>CSS Links</h1>
+    <p>За допомогою CSS, посилання можна стилізувати різними способами.</p>
+    <hr />
+
+    <article>
+      <!-- Styling -->
+      <section>
+        <h2>Styling</h2>
+        <p>
+          Посилання можна стилізувати за допомогою будь-якої властивості CSS
+          (наприклад: color, font-family, background тощо).
+        </p>
+        <p>Чотири стани посилань:</p>
+        <ul>
+          <li>a:link - звичайне, невідвідуване посилання</li>
+          <li>a:visited - посилання, яке відвідав користувач</li>
+          <li>a:hover - посилання, коли користувач наводить на нього мишку</li>
+          <li>a:active - посилання в момент натискання</li>
+        </ul>
+        <p>
+          a:hover ПОВИНЕН бути після a:link і a:visited <br />
+          a:active ПОВИНЕН бути після a:hover
+        </p>
+      </section>
+      <hr />
+
+      <!-- Decoration -->
+      <section>
+        <h2>Text Decoration</h2>
+        <p>
+          Властивість text-decoration здебільшого використовується для видалення
+          підкреслень із <a href="default.asp" target="_blank">посилань</a>:
+        </p>
+        <pre>
+        a:link {
+          text-decoration: none;
+          background-color: yellow;
+        }</pre
+        >
+      </section>
+      <hr />
+
+      <!-- Link Buttons -->
+      <section>
+        <h2>Link Buttons</h2>
+        <p>
+          Можна об’єднати кілька властивостей CSS для відображення посилань у
+          вигляді коробки/кнопки:
+        </p>
+        <a class="boxes_link" href="default.asp" target="_blank"
+          >This is a link</a
+        >
+        <div>
+          <p>
+            Цей приклад демонструє різні типи курсорів (може бути корисним для
+            посилань):
+          </p>
+        </div>
+      </section>
+      <hr />
+
+      <!-- cursor -->
+      <section>
+        <h2></h2>
+        <h2>The Cursor Property</h2>
+
+        <p>Наведіть курсор на слова, щоб змінити курсор.</p>
+        <span style="cursor: auto">auto</span><br />
+        <span style="cursor: crosshair">crosshair</span><br />
+        <span style="cursor: default">default</span><br />
+        <span style="cursor: e-resize">e-resize</span><br />
+        <span style="cursor: help">help</span><br />
+        <span style="cursor: move">move</span><br />
+        <span style="cursor: n-resize">n-resize</span><br />
+        <span style="cursor: ne-resize">ne-resize</span><br />
+        <span style="cursor: nw-resize">nw-resize</span><br />
+        <span style="cursor: pointer">pointer</span><br />
+        <span style="cursor: progress">progress</span><br />
+        <span style="cursor: s-resize">s-resize</span><br />
+        <span style="cursor: se-resize">se-resize</span><br />
+        <span style="cursor: sw-resize">sw-resize</span><br />
+        <span style="cursor: text">text</span><br />
+        <span style="cursor: w-resize">w-resize</span><br />
+        <span style="cursor: wait">wait</span><br />
+
+        <p>
+          <strong>Tip:</strong> Курсор-рука часто використовується на
+          посиланнях.
+        </p>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Navigation Bar</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Navigation Bar</h1>
+    <p>Для будь-якого веб-сайту важлива проста у використанні навігація.</p>
+    <p>
+      За допомогою CSS ви можете перетворити нудні HTML-меню на гарні
+      навігаційні панелі.
+    </p>
+    <hr />
+
+    <!-- Intro -->
+    <div>
+      <h2>Navigation Bar = List of Links</h2>
+      <p>
+        Панель навігації — це в основному список посилань, тому використання
+        елементів &lt;ul&gt; і &lt;li&gt; має сенс
+      </p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <p>
+        Примітка: ми використовуємо href="#" для тестових посилань. На реальному
+        веб-сайті це були б URL-адреси.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Vertical Navigation Bar -->
+    <div>
+      <h2>Vertical Navigation Bar</h2>
+      <ul class="ver">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news" class="active">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Horizontal Navigation Bar -->
+    <div>
+      <h2>Horizontal Navigation Bar</h2>
+      <ul class="hor">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news" class="active">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Dropdowns -->
+    <div>
+      <h2>Dropdowns</h2>
+      <p></p>
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

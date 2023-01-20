@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Float and clear</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Float and clear</h1>
+    <p>
+      Властивість CSS <strong>float</strong> визначає, як елемент має плавати.
+    </p>
+    <p>
+      Властивість CSS <strong>clear</strong> визначає, які елементи можуть
+      плавати поруч із очищеним елементом і з якого боку.
+    </p>
+    <hr />
+
+    <!-- The float Property -->
+    <div>
+      <h2>Float</h2>
+      <p>
+        <img src="img/pineapple.jpg" alt="Pineapple" />
+        Властивість float використовується для розміщення та форматування
+        вмісту, наприклад. нехай зображення плаває ліворуч до тексту в
+        контейнері.
+      </p>
+      <ul>
+        <li>
+          <strong>left</strong> - Елемент плаває з лівої сторони свого
+          контейнера
+        </li>
+        <li>
+          <strong>right</strong> - Елемент плаває з правої сторони свого
+          контейнера
+        </li>
+        <li>
+          <strong>none</strong> - Елемент не плаває (відображатиметься лише там,
+          де він зустрічається в тексті). Це за умовчанням
+        </li>
+        <li>
+          <strong>inherit</strong> - Елемент успадковує значення float своїх
+          батьків
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- The clear Property -->
+    <div>
+      <h2>Clear</h2>
+      <p>
+        <img src="img/pineapple.jpg" alt="Pineapple" />
+        Коли ми використовуємо властивість <strong>float</strong> і хочемо, щоб
+        наступний елемент був нижче (не праворуч чи ліворуч), нам доведеться
+        використовувати властивість <strong>clear</strong>.
+      </p>
+      <ul class="ul-cl">
+        <li>
+          <strong>none</strong> - Елемент не проштовхується нижче лівих або
+          правих плаваючих елементів. Це за умовчанням
+        </li>
+        <li>
+          <strong>left</strong> - Елемент виштовхується нижче лівих плаваючих
+          елементів
+        </li>
+        <li>
+          <strong>right</strong> - Елемент виштовхується нижче правих плаваючих
+          елементів
+        </li>
+        <li>
+          <strong>both</strong> - Елемент виштовхується нижче лівого та правого
+          плаваючих елементів
+        </li>
+        <li>
+          <strong>inherit</strong> - Елемент успадковує значення clear від свого
+          батька
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- The clearfix Hack -->
+    <div>
+      <h2>The clearfix Hack</h2>
+
+      <h3>Without Clearfix</h3>
+      <p>
+        Зображення вище за елемент, що його містить, тому воно виходить за межі
+        свого контейнера:
+      </p>
+
+      <div class="bor">
+        <img
+          class="img1"
+          src="img/pineapple.jpg"
+          alt="Pineapple"
+          width="170"
+          height="170"
+        />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet...
+      </div>
+
+      <h3 style="clear: right">With Clearfix</h3>
+      <p>
+        Ми можемо виправити це, додавши клас clearfix із
+        <strong> overflow: auto;</strong> до елемента, що містить:
+      </p>
+
+      <div class="clearfix bor">
+        <img
+          class="img2"
+          src="img/pineapple.jpg"
+          alt="Pineapple"
+          width="170"
+          height="170"
+        />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet...
+      </div>
+      <br />
+      <hr />
+      <br />
+
+      <div class="nav-exampl">
+        <h2>Float Examples</h2>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

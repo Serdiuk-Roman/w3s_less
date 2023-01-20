@@ -1,0 +1,15 @@
+CSS Borders
+Width
+Color
+Sides
+Shorthand
+Rounded Borders
+
+from w3schools
+
+https://www.w3schools.com/css/css_border.asp
+https://www.w3schools.com/css/css_border_width.asp
+https://www.w3schools.com/css/css_border_color.asp
+https://www.w3schools.com/css/css_border_sides.asp
+https://www.w3schools.com/css/css_border_shorthand.asp
+https://www.w3schools.com/css/css_border_rounded.asp

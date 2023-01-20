@@ -1,0 +1,120 @@
+/* Обнуление
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+-------------------- */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+footer {
+  height: 240px;
+}
+div {
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 16px;
+  box-shadow: 4px -4px 8px grey, -4px 4px 8px grey, 4px 4px 8px black;
+}
+
+li {
+  margin: 8px;
+  padding: 8px;
+}
+
+li.dotted {
+  border-style: dotted;
+}
+li.dashed {
+  border-style: dashed;
+}
+li.solid {
+  border-style: solid;
+}
+li.double {
+  border-style: double;
+}
+li.groove {
+  border-style: groove;
+}
+li.ridge {
+  border-style: ridge;
+}
+li.inset {
+  border-style: inset;
+}
+li.outset {
+  border-style: outset;
+}
+li.none {
+  border-style: none;
+}
+li.hidden {
+  border-style: hidden;
+}
+li.mix {
+  border-style: dotted dashed solid double;
+}
+
+.bor_col_red {
+  border-style: solid;
+  border-color: blue;
+  border-width: thick;
+  border-radius: 8px;
+}
+
+.bor_side {
+  border-style: dotted solid double dashed;
+  border-width: thick;
+  border-color: red green blue yellow;
+  border-radius: 8px;
+}
+
+.bor-short {
+  border-left: 48px solid red;
+}
+
+.bor-rad {
+  border: 2px solid red;
+  border-radius: 8px;
+}

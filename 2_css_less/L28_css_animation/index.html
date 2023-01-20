@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Animations</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Animations</h1>
+    <p>
+      CSS дозволяє анімувати елементи HTML без використання JavaScript або
+      Flash!
+    </p>
+    <hr />
+
+    <!-- 2D Transforms -->
+    <div>
+      <h2>2D Transforms</h2>
+      <ul>
+        <li><em>translate()</em> - переміщувати</li>
+        <li><em>rotate()</em> - обертати</li>
+        <li><em>scaleX()</em></li>
+        <li><em>scaleY()</em></li>
+        <li><em>scale()</em> - масштаб</li>
+        <li><em>skewX()</em></li>
+        <li><em>skewY()</em></li>
+        <li><em>skew()</em> - перекошений</li>
+        <li><em>matrix()</em></li>
+      </ul>
+      <div class="base-box">Це звичайний елемент div.</div>
+      <div class="base-box" id="rotate-div">
+        Цей елемент div повернуто за годинниковою стрілкою на 20 градусів.
+      </div>
+      <div class="base-box" id="scale-div">
+        Ширина цього елемента збільшена в двічі, висота в три рази більша.
+      </div>
+      <div class="base-box" id="skew-div">
+        Цей елемент перекошено на 20 градусів уздовж осі X і на 10 градусів
+        уздовж осі Y.
+      </div>
+      <div class="base-box" id="matrix-div">
+        Метод matrix() поєднує всі методи двовимірного перетворення в один.
+      </div>
+    </div>
+    <hr />
+
+    <!-- 3D Transforms -->
+    <div>
+      <h2>3D Transforms</h2>
+      <p>CSS також підтримує тривимірні перетворення.</p>
+      <div>
+        <div class="base-box" id="rotate2D">2D rotate</div>
+        <div class="base-box" id="rotate3D">3D rotate</div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Transitions -->
+    <div>
+      <h2>Transitions</h2>
+      <p>
+        Переходи CSS дозволяють плавно змінювати значення властивостей протягом
+        певного часу.
+      </p>
+      <ul>
+        <li><em>transition</em></li>
+        <li><em>transition-delay</em></li>
+        <li><em>transition-duration</em></li>
+        <li><em>transition-property</em></li>
+        <li><em>transition-timing-function</em></li>
+      </ul>
+      <div class="base-box" id="trans-w">
+        Наведіть курсор на елемент, щоб побачити ефект
+      </div>
+      <p>
+        <strong>transition: property duration timing-function delay;</strong>
+      </p>
+      <p>
+        Властивість <em>transition-timing-function</em> визначає криву швидкості
+        ефекту переходу.
+      </p>
+      <ul>
+        <li>
+          <em>ease</em> - визначає ефект переходу з повільним початком, потім
+          швидким і повільним завершенням (це типово)
+        </li>
+        <li>
+          <em>linear</em> - визначає ефект переходу з однаковою швидкістю від
+          початку до кінця
+        </li>
+        <li><em>ease-in</em> - визначає ефект переходу з повільним стартом</li>
+        <li><em>ease-out</em> - визначає ефект переходу з повільним кінцем</li>
+        <li>
+          <em>ease-in-out</em> - визначає ефект переходу з повільним початком і
+          закінченням
+        </li>
+        <li>
+          <em>cubic-bezier(n,n,n,n)</em> - дозволяє визначати власні значення у
+          функції кривих Біз’є
+        </li>
+      </ul>
+      <img src="img/transition-timing-functions-all.jpg" alt="easing" />
+      <h1>Transition + Transform</h1>
+      <div class="tr-tr"></div>
+    </div>
+    <hr />
+
+    <!-- Animations -->
+    <div>
+      <h2>Animations</h2>
+      <p>
+        CSS дозволяє анімувати елементи HTML без використання JavaScript або
+        Flash!
+      </p>
+      <ul>
+        <li><em>@keyframes</em></li>
+        <li><em>animation-name</em></li>
+        <li><em>animation-duration</em></li>
+        <li><em>animation-delay</em></li>
+        <li><em>animation-iteration-count</em></li>
+        <li><em>animation-direction</em></li>
+        <li><em>animation-timing-function</em></li>
+        <li><em>animation-fill-mode</em></li>
+        <li><em>animation</em></li>
+      </ul>
+      <p>
+        Щоб використовувати CSS-анімацію, ви повинні спочатку вказати кілька
+        ключових кадрів для анімації. Ключові кадри містять стилі, які матиме
+        елемент у певний час.
+      </p>
+      <pre>
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+      </pre>
+
+      <p>
+        Властивість animation-timing-function визначає криву швидкості анімації.
+      </p>
+      <div class="anim" id="div1">linear</div>
+      <div class="anim" id="div2">ease</div>
+      <div class="anim" id="div3">ease-in</div>
+      <div class="anim" id="div4">ease-out</div>
+      <div class="anim" id="div5">ease-in-out</div>
+
+      <p>Скорочений запис анімації</p>
+      <pre>
+    div {
+      animation-name: example;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+      </pre>
+      <p><b>==</b></p>
+      <pre>
+    div {
+      animation: example 5s linear 2s infinite alternate;
+    }
+      </pre>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

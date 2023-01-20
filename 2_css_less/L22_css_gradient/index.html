@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Gradients</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Gradients</h1>
+    <p>
+      Градієнти CSS дозволяють відображати плавні переходи між двома або більше
+      вказаними кольорами.
+    </p>
+    <p>CSS визначено три типи градієнтів:</p>
+    <ul>
+      <li>Лінійні градієнти</li>
+      <li>Радіальні градієнти (від центру)</li>
+      <li>Конічні градієнти (обертаються навколо центральної точки)</li>
+    </ul>
+    <hr />
+
+    <!-- Linear Gradients -->
+    <div>
+      <h2>Linear Gradients</h2>
+      <p class="grad">
+        Необхідно визначити принаймні два переходи кольорову. Кольорові позначки
+        – це кольори, між якими ви хочете зробити плавні переходи. Ви також
+        можете встановити початкову точку та напрямок (або кут) разом із ефектом
+        градієнта. <br /><br />
+        <em
+          >background-image: linear-gradient(to bottom right, lightblue ,
+          yellow);</em
+        >
+      </p>
+      <p class="grad2">
+        У цьому прикладі показано лінійний градієнт із декількома кольорами
+        <br /><br />
+        background-image: linear-gradient(60deg,
+        red,orange,yellow,green,blue,indigo,violet);
+      </p>
+    </div>
+    <hr />
+
+    <!-- Radial Gradients -->
+    <div>
+      <h2>Radial Gradients</h2>
+      <p class="grad3">
+        Радіальний градієнт визначається його центром. Щоб створити радіальний
+        градієнт, ви також повинні визначити принаймні дві кольорові точки.
+        <br />
+        <br />
+        background-image: radial-gradient(red, yellow, green);
+      </p>
+    </div>
+    <hr />
+
+    <!-- Conic Gradients -->
+    <div>
+      <h2>Conic Gradients</h2>
+      <p class="grad4">
+        Конічний градієнт — це градієнт із переходами кольорів, обертаними
+        навколо центральної точки. Щоб створити конічний градієнт, необхідно
+        визначити принаймні два кольори.
+      </p>
+      <div class="grad5"></div>
+      <div class="grad6"></div>
+      <div class="grad7"></div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

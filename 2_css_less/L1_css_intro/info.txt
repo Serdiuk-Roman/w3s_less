@@ -1,0 +1,14 @@
+CSS Introduction
+Syntax
+Selectors
+How To Add CSS
+Comments
+
+
+from w3schools
+
+https://www.w3schools.com/css/css_intro.asp
+https://www.w3schools.com/css/css_syntax.asp
+https://www.w3schools.com/css/css_selectors.asp
+https://www.w3schools.com/css/css_howto.asp
+https://www.w3schools.com/css/css_comments.asp

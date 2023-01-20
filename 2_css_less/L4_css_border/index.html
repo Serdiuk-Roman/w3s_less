@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Borders</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>CSS Borders</h1>
+      <p>
+        Властивості CSS border дозволяють вказати стиль, ширину та колір рамки
+        елемента.
+      </p>
+      <hr />
+
+      <!-- Style -->
+      <section>
+        <h2>Border Style</h2>
+        <p>Властивість border-style визначає тип рамки для відображення.</p>
+        <div>
+          <ul>
+            <li class="dotted">dotted - пунктир</li>
+            <li class="dashed">dashed - штрих</li>
+            <li class="solid">solid - суцільна</li>
+            <li class="double">double - подвоєна</li>
+            <li class="groove">groove - рамка з 3D єфектом</li>
+            <li class="ridge">ridge - рамка з 3D єфектом</li>
+            <li class="inset">inset - рамка з 3D єфектом</li>
+            <li class="outset">outset - рамка з 3D єфектом</li>
+            <li class="none">none - рамка відсутння</li>
+            <li class="hidden">hidden - прихована</li>
+            <li class="mix">
+              Стилі можна комбінувати ___↑____→___↓____←__<br />
+              ____________border-style: dotted dashed solid double;
+            </li>
+          </ul>
+        </div>
+        <br />
+      </section>
+      <hr />
+
+      <!-- Width -->
+      <section>
+        <h2>Border Width</h2>
+        <p>
+          border-width: 5px; <br />
+          px, pt, cm, em або за допомогою одного з трьох <br />
+          попередньо визначених значень:
+          <strong> thin, medium, or thick</strong>.
+        </p>
+      </section>
+      <hr />
+
+      <!-- Color -->
+      <section>
+        <h2>Border Color</h2>
+        <ul class="bor_col_red">
+          <li>name - like "red"</li>
+          <li>HEX - "#ff0000"</li>
+          <li>RGB - "rgb(255,0,0)"</li>
+          <li>HSL - "hsl(0, 100%, 50%)"</li>
+          <li>transparent (прозорий)</li>
+        </ul>
+      </section>
+      <hr />
+
+      <!-- Sides -->
+      <section>
+        <h2>Individual Sides</h2>
+        <p>border-style: dotted solid double dashed;</p>
+        <ul class="bor_side">
+          <li>top border is dotted</li>
+          <li>right border is solid</li>
+          <li>bottom border is double</li>
+          <li>left border is dashed</li>
+        </ul>
+      </section>
+      <hr />
+
+      <!-- Shorthand -->
+      <section>
+        <h2>Shorthand</h2>
+        <p class="bor-short">border-left: 48px solid red;</p>
+      </section>
+      <hr />
+
+      <!-- Rounded -->
+      <section>
+        <h2>Rounded Borders</h2>
+        <p class="bor-rad">
+          border: 2px solid red; <br />
+          border-radius: 8px;
+        </p>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

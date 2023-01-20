@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <title>HTML Semantic Elements</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .head {
+        display: flex;
+        justify-content: center;
+      }
+      figure {
+        border: thin solid #c0c0c0;
+        display: flex;
+        flex-flow: column;
+        padding: 5px;
+        max-width: 220px;
+      }
+      figcaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+      }
+      ul {
+        border: thin solid #c0c0c0;
+        padding: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>HTML Semantic Elements</h1>
+      <section class="head">
+        <figure>
+          <img src="img/img_sem_elements.gif" />
+          <figcaption>figcaption</figcaption>
+        </figure>
+        <ul>
+          <li>article</li>
+          <li>aside</li>
+          <li>details</li>
+          <li>figcaption</li>
+          <li>figure</li>
+          <li>footer</li>
+          <li>header</li>
+          <li>main</li>
+          <li>mark</li>
+          <li>nav</li>
+          <li>section</li>
+          <li>summary</li>
+          <li>time</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>HTML &lt;header&gt; Element</h2>
+        <ul>
+          <li>Логотип або значок</li>
+          <li>Відомості про авторство</li>
+          <li>Набір навігаційних посилань</li>
+        </ul>
+      </section>
+      <section>
+        <h2>HTML &lt;nav&gt; Element</h2>
+        <p>
+          Визначає набір навігаційних посилань. <br />
+          Призначений лише для основних блоків навігаційних посилань.
+        </p>
+        <p></p>
+      </section>
+      <hr />
+      <section>
+        <h2>HTML &lt;footer&gt; Element</h2>
+        <ul>
+          <li>Відомості про авторство</li>
+          <li>Інформація про авторські права</li>
+          <li>Контактна інформація</li>
+          <li>Карта сайту</li>
+          <li>Посилання на початок</li>
+          <li>Пов'язані документи</li>
+        </ul>
+      </section>
+      <section>
+        <h2>HTML &lt;aside&gt; Element</h2>
+        <p>Ніби примітки на полях, завдяки CSS іх так і оформлюють.</p>
+      </section>
+      <hr />
+      <section></section>
+    </article>
+  </body>
+</html>

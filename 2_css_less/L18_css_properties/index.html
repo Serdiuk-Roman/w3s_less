@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Properties</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Properties</h1>
+    <hr />
+
+    <!-- Counters -->
+    <div>
+      <h2>CSS Counters</h2>
+      <p>
+        Лічильники CSS схожі на "змінні". Значення змінних можна збільшити за
+        допомогою правил CSS (які відстежуватимуть, скільки разів вони
+        використовуються).
+      </p>
+      <ul>
+        <li><em>counter-reset</em> - Створює або скидає лічильник</li>
+        <li><em>counter-increment</em> - Збільшує значення лічильника</li>
+        <li><em>content</em> - Вставляє створений вміст</li>
+        <li>
+          <em>counter()</em> або <em>counters()</em> функція - додає значення
+          лічильника до елемента
+        </li>
+      </ul>
+      <div class="count">
+        <p>Приклад використання</p>
+        <h4>HTML/CSS Tutorials</h4>
+        <h5>HTML</h5>
+        <h5>CSS</h5>
+        <h5>Bootstrap</h5>
+        <h5>W3.CSS</h5>
+
+        <h4>Scripting Tutorials</h4>
+        <h5>JavaScript</h5>
+        <h5>jQuery</h5>
+        <h5>React</h5>
+
+        <h4>Programming Tutorials</h4>
+        <h5>Python</h5>
+        <h5>Java</h5>
+        <h5>C++</h5>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Units -->
+    <div>
+      <h2>CSS Units</h2>
+      <p>CSS має кілька різних одиниць для вираження довжини.</p>
+      <p>
+        Розрізняють два типи одиниць вимірювання довжини: абсолютні та відносні.
+      </p>
+      <h3>Абсолютні довжини</h3>
+      <p>
+        Абсолютні одиниці довжини є фіксованими, і довжина, виражена в будь-якій
+        з них, відображатиметься як саме той розмір.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 25%">Unit</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>cm</td>
+            <td>centimeters</td>
+          </tr>
+          <tr>
+            <td>mm</td>
+            <td>millimeters</td>
+          </tr>
+          <tr>
+            <td>in</td>
+            <td>inches (1in = 96px = 2.54cm)</td>
+          </tr>
+          <tr>
+            <td>px</td>
+            <td>pixels (1px = 1/96th of 1in)</td>
+          </tr>
+          <tr>
+            <td>pt</td>
+            <td>points (1pt = 1/72 of 1in)</td>
+          </tr>
+          <tr>
+            <td>pc</td>
+            <td>picas (1pc = 12 pt)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Відносні довжини</h3>
+      <p>
+        Одиниці відносної довжини визначають довжину відносно іншої властивості
+        довжини. Одиниці відносної довжини краще масштабуються між різними
+        середовищами візуалізації.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 12%">Unit</th>
+            <th>Description</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>em</td>
+            <td>
+              Відносно розміру шрифту елемента (2em означає 2-кратний розмір
+              поточного шрифту)
+            </td>
+          </tr>
+          <tr>
+            <td>ex</td>
+            <td>
+              Відносно висоти символа "х" поточного шрифту (використовується
+              рідко)
+            </td>
+          </tr>
+          <tr>
+            <td>ch</td>
+            <td>Відносно ширини "0" (нуль)</td>
+          </tr>
+          <tr>
+            <td>rem</td>
+            <td>Відносно розміру шрифту кореневого елемента</td>
+          </tr>
+          <tr>
+            <td>vw</td>
+            <td>Відносно 1% ширини вікна перегляду</td>
+          </tr>
+          <tr>
+            <td>vh</td>
+            <td>Відносно 1% висоти вікна перегляду</td>
+          </tr>
+          <tr>
+            <td>vmin</td>
+            <td>Відносно 1% меншого розміру вікна перегляду</td>
+          </tr>
+          <tr>
+            <td>vmax</td>
+            <td>Відносно 1% більшого розміру вікна перегляду</td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Відносно батьківського елемента</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Порада: одиниці em і rem практичні у створенні ідеально масштабованого
+        макета! * Viewport = розмір вікна браузера. Якщо вікно перегляду має
+        ширину 50 см, 1vw = 0,5 см.
+      </p>
+    </div>
+    <hr />
+
+    <!-- The !important Rule -->
+    <div>
+      <h2>The !important Rule</h2>
+      <p>
+        Правило <strong>!important</strong> у CSS використовується для того, щоб
+        додати властивості/значенню більшої важливості, ніж зазвичай.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Math Functions -->
+    <div>
+      <h2>Math Functions</h2>
+      <p>
+        Математичні функції CSS дозволяють використовувати математичні вирази як
+        значення властивостей. Тут ми пояснимо функції calc(), max() і min().
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 30%">Function</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>calc()</td>
+            <td>
+              Дозволяє виконувати обчислення для визначення значень властивостей
+              CSS. Можна використовувати такі оператори: + - * /
+            </td>
+          </tr>
+          <tr>
+            <td>max()</td>
+            <td>
+              Використовує найбільше значення зі списку значень, розділених
+              комами, як значення властивості
+            </td>
+          </tr>
+          <tr>
+            <td>min()</td>
+            <td>
+              Використовує найменше значення зі списку значень, розділених
+              комами, як значення властивості
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

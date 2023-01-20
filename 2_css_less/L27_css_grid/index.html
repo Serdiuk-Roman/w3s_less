@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Grid</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>CSS Grid (Сітка)</h1>
+    <hr />
+
+    <!-- Grid Intro -->
+    <div>
+      <h2>CSS Grid Layout Module</h2>
+      <p>
+        Модуль <em lang="en">CSS Grid Layout Module</em> пропонує систему макета
+        на основі сітки з рядками та стовпцями, що полегшує дизайн веб-сторінок
+        без використання плаваючих елементів і позиціонування.
+      </p>
+
+      <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+      </div>
+      <br />
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 30%">Property</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>row-gap</td>
+            <td>Визначає проміжок між рядками сітки</td>
+          </tr>
+          <tr>
+            <td>column-gap</td>
+            <td>Визначає проміжок між колонками</td>
+          </tr>
+          <tr>
+            <td>gap</td>
+            <td>
+              Скорочена властивість для властивостей <em>row-gap</em> та
+              <em>column-gap</em>
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              Скорочена властивість для grid-template-rows,
+              grid-template-columns, grid-template-areas, grid-auto-rows,
+              grid-auto-columns і grid-auto-flow
+            </td>
+          </tr>
+          <tr>
+            <td>grid-area</td>
+            <td>
+              Вказує назву для елемента сітки, або ця властивість є скороченою
+              властивістю для властивостей grid-row-start, grid-column-start,
+              grid-row-end і grid-column-end
+            </td>
+          </tr>
+          <tr>
+            <td>grid-auto-columns</td>
+            <td>Визначає розмір стовпця за умовчанням</td>
+          </tr>
+          <tr>
+            <td>grid-auto-flow</td>
+            <td>
+              Визначає, як автоматично розміщені елементи вставляють у сітку
+            </td>
+          </tr>
+          <tr>
+            <td>grid-auto-rows</td>
+            <td>Визначає розмір рядка за умовчанням</td>
+          </tr>
+          <tr>
+            <td>grid-column</td>
+            <td>
+              Скорочена властивість для властивостей grid-column-start і
+              grid-column-end
+            </td>
+          </tr>
+          <tr>
+            <td>grid-column-end</td>
+            <td>Визначає, де закінчувати елемент сітки</td>
+          </tr>
+          <tr>
+            <td>grid-column-gap</td>
+            <td>Визначає розмір проміжку між колонками</td>
+          </tr>
+          <tr>
+            <td>grid-column-start</td>
+            <td>Визначає, з чого почати елемент сітки</td>
+          </tr>
+          <tr>
+            <td>grid-gap</td>
+            <td>
+              Скорочена властивість для властивостей grid-row-gap і
+              grid-column-gap
+            </td>
+          </tr>
+          <tr>
+            <td>grid-row</td>
+            <td>
+              Скорочена властивість для властивостей grid-row-start і
+              grid-row-end
+            </td>
+          </tr>
+          <tr>
+            <td>grid-row-end</td>
+            <td>Визначає, де закінчувати елемент сітки</td>
+          </tr>
+          <tr>
+            <td>grid-row-gap</td>
+            <td>Визначає розмір проміжку між рядами</td>
+          </tr>
+          <tr>
+            <td>grid-row-start</td>
+            <td>Визначає, з чого почати елемент сітки</td>
+          </tr>
+          <tr>
+            <td>grid-template</td>
+            <td>
+              Скорочена властивість для властивостей grid-template-rows,
+              grid-template-columns і grid-areas
+            </td>
+          </tr>
+          <tr>
+            <td>grid-template-areas</td>
+            <td>
+              Визначає спосіб відображення стовпців і рядків за допомогою
+              іменованих елементів сітки
+            </td>
+          </tr>
+          <tr>
+            <td>grid-template-columns</td>
+            <td>
+              Визначає розмір стовпців і кількість стовпців у макеті сітки
+            </td>
+          </tr>
+          <tr>
+            <td>grid-template-rows</td>
+            <td>Визначає розмір рядків у макеті сітки</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <!-- Grid Container -->
+    <div>
+      <h2>Grid Container</h2>
+      <p>
+        Щоб змусити елемент HTML поводитися як контейнер сітки, вам потрібно
+        встановити властивість відображення на grid або inline-grid. Контейнери
+        сітки складаються з елементів сітки, розміщених у стовпцях і рядках.
+      </p>
+      <h3>grid-template-columns</h3>
+      <p>
+        Властивість grid-template-columns визначає кількість стовпців у вашому
+        макеті сітки, а також може визначати ширину кожного стовпця.
+      </p>
+      <h3>grid-template-rows</h3>
+      <p>Властивість grid-template-rows визначає висоту кожного рядка.</p>
+      <pre>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 80px 200px auto 40px;
+          grid-template-rows: 80px 200px;
+          justify-content: center;
+          align-content: center;
+        }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Grid Item -->
+    <div>
+      <h2>Grid Item</h2>
+      <div class="grid-container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+      </div>
+      <ul>
+        <li>grid-column</li>
+        <li>grid-row</li>
+        <li>grid-area</li>
+        <li>grid-template-areas</li>
+      </ul>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

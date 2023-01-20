@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Shadow Effects</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Shadow Effects</h1>
+    <p>
+      За допомогою CSS ви можете додавати тінь до тексту та елементів. У цих
+      розділах ви дізнаєтеся про такі властивості:
+    </p>
+    <ul>
+      <li><strong>text-shadow</strong></li>
+      <li><strong>box-shadow</strong></li>
+    </ul>
+    <hr />
+
+    <!-- Text Shadow -->
+    <div>
+      <h2 class="t-sh">Text Shadow</h2>
+      <p>Властивість CSS text-shadow додає тінь до тексту.</p>
+      <pre>
+        h2.t-sh {
+          color: white;
+          text-shadow:  1px 1px 2px black,
+                        0 0 25px red,
+                        0 0 5px darkblue;
+        }
+      </pre>
+    </div>
+    <hr />
+
+    <!-- Box Shadow -->
+    <div>
+      <h2>Box Shadow</h2>
+      <div class="b-sh">
+        <pre>
+          .b-sh {
+            width: 480px;
+            height: 240px;
+            padding: 16px;
+            background-color: coral;
+            border-radius: 16px;
+            box-shadow: 10px 10px 5px 12px blue,
+                        16px 16px 5px lightgreen inset;
+          }
+        </pre>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

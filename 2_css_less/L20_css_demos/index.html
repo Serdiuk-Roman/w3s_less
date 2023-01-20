@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Demos</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Demos</h1>
+    <hr />
+
+    <!-- CSS Dropdowns -->
+    <div>
+      <h2>CSS Dropdowns</h2>
+      <p>Випадаюче меню всередині панелі навігації</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Image Gallery -->
+    <div>
+      <h2>Image Gallery</h2>
+      <p>CSS можна використовувати для створення галереї зображень.</p>
+      <div class="clearfix">
+        <div class="gallery">
+          <a target="_blank" href="img/img_5terre.jpg">
+            <img
+              src="img/img_5terre.jpg"
+              alt="Cinque Terre"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img
+              src="img/img_forest.jpg"
+              alt="Forest"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img
+              src="img/img_lights.jpg"
+              alt="Northern Lights"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img
+              src="img/img_mountains.jpg"
+              alt="Mountains"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- CSS Forms -->
+    <div>
+      <h2>CSS Forms</h2>
+      <p>Вигляд форми HTML можна значно покращити за допомогою CSS</p>
+      <div class="forms">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <input type="text" name="search" placeholder="Search.." />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

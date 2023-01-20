@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Margins & Padding</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>CSS Margins & Padding</h1>
+      <p>
+        <strong>Margins</strong>(поля) використовуються для створення простору
+        навколо елементів, зовні будь-яких визначених рамок.
+      </p>
+      <p>
+        <strong>Padding</strong>(відступ) використовується для створення
+        простору навколо вмісту елемента всередині будь-яких визначених
+        меж(borders).
+      </p>
+      <hr />
+
+      <!-- properties -->
+      <section>
+        <h2>Margin Значення</h2>
+        <ul>
+          <li>auto - браузер обчислює поля</li>
+          <li><em>length</em> - sвказує поля в px, pt, cm, і т. ін.</li>
+          <li>
+            <em>%</em> - визначає відступ у % від ширини елемента, що містить
+          </li>
+          <li>
+            inherit - вказує, що поля мають бути успадковані від батьківського
+            елемента
+          </li>
+          <li>Від’ємні значення дозволені</li>
+        </ul>
+        <p>margin: auto; - Вирівняти блок по центру</p>
+      </section>
+      <hr />
+
+      <!-- Shorthand -->
+      <section>
+        <h2>Margin Shorthand</h2>
+        <ul>
+          <li>
+            <b>margin: 25px 50px 75px;</b>
+            <ul>
+              <li>top margin is 25px</li>
+              <li><strong>right and left</strong> margins are 50px</li>
+              <li>bottom margin is 75px</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <!-- Collapse -->
+      <section>
+        <h2>Margin Collapse</h2>
+        <p>
+          Згортання полів(margin collapse) відбувається, коли вертикально
+          суміжні поля елементів блоків стикаються, щоб розділити загальний
+          простір полів. Розмір цього спільного простору визначається більшим
+          числовим значенням поля(margin) блоків.
+        </p>
+      </section>
+      <hr />
+
+      <section>
+        <h2>CSS Padding</h2>
+        <p class="pad-example">
+          Цей елемент має відступи(padding) по 100 пікселів <br /><br />
+          padding: 100px; <br />border: thin solid black;
+        </p>
+      </section>
+      <hr />
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

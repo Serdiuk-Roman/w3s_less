@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>CSS Lists</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>CSS Lists</h1>
+    <p>У HTML існує два основних типи списків:</p>
+    <ul>
+      <li>невпорядковані списки (&lt;ul&gt;)</li>
+      <li>упорядковані списки (&lt;ol&gt;)</li>
+    </ul>
+    <hr />
+
+    <h2>Markers</h2>
+    <h3>list-style-type</h3>
+    <div>
+      <p>Приклад невпорядкованих списків:</p>
+      <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+      <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <p>Приклад упорядкованих списків:</p>
+      <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+    </div>
+    <hr />
+
+    <h3>list-style-image</h3>
+    <ul class="e">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+    <hr />
+
+    <h3>list-style-position</h3>
+    <div>
+      <p>
+        Властивість <strong>list-style-position</strong> вказує положення
+        маркерів елементів списку (точок).
+      </p>
+      <p>list-style-position: outside (default):</p>
+      <ul class="f">
+        <li>
+          Coffee - A brewed drink prepared from roasted coffee beans, which are
+          the seeds of berries from the Coffea plant
+        </li>
+        <li>
+          Tea - An aromatic beverage commonly prepared by pouring hot or boiling
+          water over cured leaves of the Camellia sinensis, an evergreen shrub
+          (bush) native to Asia
+        </li>
+        <li>
+          Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
+          The drink's name refers to two of its original ingredients, which were
+          kola nuts (a source of caffeine) and coca leaves
+        </li>
+      </ul>
+
+      <p>list-style-position: inside:</p>
+      <ul class="g">
+        <li>
+          Coffee - A brewed drink prepared from roasted coffee beans, which are
+          the seeds of berries from the Coffea plant
+        </li>
+        <li>
+          Tea - An aromatic beverage commonly prepared by pouring hot or boiling
+          water over cured leaves of the Camellia sinensis, an evergreen shrub
+          (bush) native to Asia
+        </li>
+        <li>
+          Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
+          The drink's name refers to two of its original ingredients, which were
+          kola nuts (a source of caffeine) and coca leaves
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <h3>Remove Default Settings</h3>
+    <div>
+      <pre>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }</pre
+      >
+      <p>Видалені маркери, поля та відступи зі списку:</p>
+      <ul class="h">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+    </div>
+    <hr />
+
+    <h3>Shorthand</h3>
+    <pre>
+    ul {
+      list-style: square inside url("sqpurple.gif");
+    }               &uArr; якщо зображення
+                 не може бути відображено </pre
+    >
+    <hr />
+
+    <h3>Styling List With Colors</h3>
+    <div>
+      <ul class="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+    </div>
+    <hr />
+
+    <h3>All List Style Types</h3>
+    <div>
+      <ul class="lst-a">
+        <li>Circle type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <ul class="lst-b">
+        <li>Disc type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <ul class="lst-c">
+        <li>Square type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <ol class="lst-d">
+        <li>Armenian type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-e">
+        <li>Cjk-ideographic type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+      </ol>
+
+      <ol class="lst-f">
+        <li>Decimal type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-g">
+        <li>Decimal-leading-zero type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-h">
+        <li>Georgian type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-i">
+        <li>Hebrew type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-j">
+        <li>Hiragana type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-k">
+        <li>Hiragana-iroha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-l">
+        <li>Katakana type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-m">
+        <li>Katakana-iroha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-n">
+        <li>Lower-alpha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-o">
+        <li>Lower-greek type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-p">
+        <li>Lower-latin type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-q">
+        <li>Lower-roman type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-r">
+        <li>Upper-alpha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-s">
+        <li>Upper-latin type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-t">
+        <li>Upper-roman type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        <li>Pepsi</li>
+        <li>Biola</li>
+      </ol>
+
+      <ol class="lst-u">
+        <li>None type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ol class="lst-v">
+        <li>inherit type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

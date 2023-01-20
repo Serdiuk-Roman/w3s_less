@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Flexbox</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Flexbox</h1>
+    <hr />
+
+    <!-- Flexbox -->
+    <div>
+      <h2>Flexbox</h2>
+      <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+      </div>
+      <ul>
+        <li><em>flex-direction</em></li>
+        <li><em>flex-wrap</em></li>
+        <li><em>flex-flow</em></li>
+        <li><em>justify-content</em></li>
+        <li><em>align-items</em></li>
+        <li><em>align-content</em></li>
+      </ul>
+      <h3>flex-direction</h3>
+      <div class="flex-container2">
+        <div>1</div>
+        <div>2 - flex-direction: column;</div>
+        <div>3</div>
+      </div>
+      <h3>flex-wrap</h3>
+      <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+      </div>
+      <h3>flex-flow</h3>
+      <p>
+        Властивість flex-flow є скороченою властивістю для встановлення
+        властивостей як flex-direction, так і flex-wrap.
+      </p>
+      <pre>
+        .flex-container {
+          display: flex;
+          flex-flow: row wrap;
+        }
+      </pre>
+      <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+      </div>
+      <h3>justify-content</h3>
+      <p>
+        Властивість justify-content використовується для вирівнювання елементів
+        Flex
+      </p>
+      <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <ul>
+        <li>flex-start</li>
+        <li><strong>center</strong></li>
+        <li>flex-end</li>
+        <li>space-around</li>
+        <li>space-between</li>
+      </ul>
+      <h3>align-items</h3>
+      <p>
+        Властивість align-items використовується для вирівнювання елементів
+        flex.
+      </p>
+      <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <ul>
+        <li>flex-start</li>
+        <li>center</li>
+        <li><strong>flex-end</strong></li>
+        <li>stretch</li>
+        <li>baseline</li>
+      </ul>
+      <h3>align-content</h3>
+      <p>
+        Властивість align-content використовується для вирівнювання flex ліній.
+      </p>
+      <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+      <ul>
+        <li>space-between</li>
+        <li>space-around</li>
+        <li><strong>stretch</strong></li>
+        <li>center</li>
+        <li>flex-start</li>
+        <li>flex-end</li>
+      </ul>
+
+      <h3>Властивості контейнера CSS Flexbox</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 25%">Property</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>align-content</td>
+            <td>
+              Змінює поведінку властивості flex-wrap. Він схожий на align-items,
+              але замість вирівнювання гнучких елементів він вирівнює гнучкі
+              лінії
+            </td>
+          </tr>
+          <tr>
+            <td>align-items</td>
+            <td>
+              Вертикально вирівнює гнучкі елементи, якщо вони не займають весь
+              доступний простір на поперечній осі
+            </td>
+          </tr>
+          <tr>
+            <td>display</td>
+            <td>Визначає тип поля, що використовується для елемента HTML</td>
+          </tr>
+          <tr>
+            <td>flex-direction</td>
+            <td>
+              Визначає напрямок гнучких елементів усередині гнучкого контейнера
+            </td>
+          </tr>
+          <tr>
+            <td>flex-flow</td>
+            <td>Скорочена властивість для flex-direction і flex-wrap</td>
+          </tr>
+          <tr>
+            <td>flex-wrap</td>
+            <td>
+              Визначає, чи мають обгортатися елементи flex чи ні, якщо для них
+              недостатньо місця на одній лінії flex
+            </td>
+          </tr>
+          <tr>
+            <td>justify-content</td>
+            <td>
+              Горизонтально вирівнює гнучкі елементи, якщо вони не займають весь
+              доступний простір на головній осі
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <!-- Flex Items -->
+    <div>
+      <h2>Flex Items</h2>
+      <p>
+        Прямі дочірні елементи flex контейнера автоматично стають гнучкими
+        (гнучкими) елементами.
+      </p>
+      <h3>Властивості гнучкого елемента</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th style="width: 25%">Property</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>align-self</td>
+            <td>
+              Визначає вирівнювання для елемента flex (перевизначає властивість
+              align-items контейнера flex)
+            </td>
+          </tr>
+          <tr>
+            <td>flex</td>
+            <td>
+              Скорочена властивість властивостей flex-grow, flex-shrink і
+              flex-basis
+            </td>
+          </tr>
+          <tr>
+            <td>flex-basis</td>
+            <td>Визначає початкову довжину елемента flex</td>
+          </tr>
+          <tr>
+            <td>flex-grow</td>
+            <td>
+              Визначає, наскільки збільшуватиметься flex-елемент відносно решти
+              flex-елементів у тому самому контейнері
+            </td>
+          </tr>
+          <tr>
+            <td>flex-shrink</td>
+            <td>
+              Визначає, наскільки flex-елемент зменшиться відносно решти
+              flex-елементів у тому самому контейнері
+            </td>
+          </tr>
+          <tr>
+            <td>order</td>
+            <td>Визначає порядок елементів Flex в одному контейнері</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>order</h3>
+      <p>Властивість order визначає порядок гнучких елементів.</p>
+      <h3>flex-grow</h3>
+      <p>
+        Властивість flex-grow визначає, наскільки flex-елемент буде рости
+        відносно решти flex-елементів.
+      </p>
+      <h3>flex-shrink</h3>
+      <p>
+        Властивість flex-shrink визначає, наскільки flex-елемент зменшиться
+        відносно решти flex-елементів.
+      </p>
+      <h3>flex-basis</h3>
+      <p>Властивість flex-basis визначає початкову довжину елемента flex.</p>
+      <h3>flex</h3>
+      <p>
+        Властивість flex — це скорочення властивостей flex-grow, flex-shrink і
+        flex-basis.
+      </p>
+      <h3>align-self</h3>
+      <p>
+        Властивість align-self визначає вирівнювання для вибраного елемента
+        всередині гнучкого контейнера.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Flex Responsive -->
+    <div>
+      <h2>Flex Responsive (адаптивний, чутливий)</h2>
+      <p>
+        За допомогою @media ви можете використовувати медіа-запити для створення
+        різних макетів для різних розмірів екрана та пристроїв.
+      </p>
+      <pre>
+      /* Адаптивний макет – якщо ширина екрана менше 700 пікселів
+      то дві колонки складаються одна над одною,
+      інакше поруч один з одним */
+    .navbar {
+      display: flex;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 700px) {
+      .row, .navbar {
+        flex-direction: column;
+      }
+    }
+      </pre>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

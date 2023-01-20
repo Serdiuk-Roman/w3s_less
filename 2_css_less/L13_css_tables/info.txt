@@ -1,0 +1,13 @@
+CSS Tables
+Table Size
+Table Alignment
+Table Style
+Responsive Table
+
+from w3schools
+
+https://www.w3schools.com/css/css_table.asp
+https://www.w3schools.com/css/css_table_size.asp
+https://www.w3schools.com/css/css_table_align.asp
+https://www.w3schools.com/css/css_table_style.asp
+https://www.w3schools.com/css/css_table_responsive.asp

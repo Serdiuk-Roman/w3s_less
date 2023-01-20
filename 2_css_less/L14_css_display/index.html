@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="author" content="John Doe" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Visibility & Layout</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Visibility & Layout</h1>
+    <hr />
+
+    <!-- CSS Display -->
+    <div>
+      <h2>CSS Display</h2>
+      <p>
+        Властивість display є найважливішою властивістю CSS для керування
+        макетом.
+      </p>
+      <p>
+        За замовчуванням відображення для більшості елементів є блоковим (block)
+        або рядковим (inline).
+      </p>
+      <p>
+        <strong>display: none;</strong> зазвичай використовується з JavaScript,
+        щоб приховати та показати елементи без їх видалення та повторного
+        створення.
+      </p>
+      <p>
+        <strong>visibility:hidden;</strong> - приховує елемент. Однак елемент
+        займатиме стільки ж місця, скільки й раніше. Елемент буде приховано, але
+        все одно вплине на макет.
+      </p>
+
+      <div class="imgbox" id="imgbox1">
+        display:none<br />
+        <img src="img/img_5terre.jpg" alt="Italy" style="width: 100%" />
+        <button onclick="removeElement()">Remove</button>
+      </div>
+
+      <div class="imgbox" id="imgbox2">
+        visibility:hidden<br />
+        <img src="img/img_lights.jpg" alt="Lights" style="width: 100%" />
+        <button onclick="changeVisibility()">Hide</button>
+      </div>
+
+      <div class="imgbox">
+        Reset<br />
+        <img src="img/img_forest.jpg" alt="Forest" style="width: 100%" />
+        <button onclick="resetElement()">Reset All</button>
+      </div>
+
+      <script>
+        function removeElement() {
+          document.getElementById("imgbox1").style.display = "none";
+        }
+
+        function changeVisibility() {
+          document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+
+        function resetElement() {
+          document.getElementById("imgbox1").style.display = "block";
+          document.getElementById("imgbox2").style.visibility = "visible";
+        }
+      </script>
+
+      <div style="clear: both">
+        <br />
+        <p class="flip" onclick="myFunction()">Click to show/remove panel</p>
+
+        <div id="panel">
+          <p>
+            Ця панель містить елемент div, який за умовчанням приховано
+            (display: none).
+          </p>
+          <p>
+            Ми використовуємо JavaScript, щоб показати його (display: block) або
+            скрити (display: none).
+          </p>
+        </div>
+
+        <script>
+          function myFunction() {
+            let el = document.getElementById("panel");
+            if (el.style.display === "block") {
+              el.style.display = "none";
+            } else {
+              el.style.display = "block";
+            }
+          }
+        </script>
+      </div>
+    </div>
+    <hr />
+
+    <!-- The position Property -->
+    <div>
+      <h2>The position Property</h2>
+      <p>
+        Властивість position вказує тип методу позиціонування, що
+        використовується для елемента:
+      </p>
+      <ul>
+        <li>статичний (static)</li>
+        <li>відносний (relative)</li>
+        <li>фіксований (fixed)</li>
+        <li>абсолютний (absolute)</li>
+        <li>закріплений (sticky)</li>
+      </ul>
+
+      <div class="static">
+        <p>position: static;</p>
+        <p>
+          За замовчуванням в браузерах. На статично позиціоновані елементи не
+          впливають властивості top, bottom, left і right.
+        </p>
+      </div>
+
+      <div class="relative">
+        <p>position: relative; left: 30px;</p>
+        <p>
+          Елемент із позицією: relative; розташований відносно свого нормального
+          положення:
+        </p>
+      </div>
+
+      <div>
+        <p>
+          position: fixed; <br />
+          Зверніть увагу на фіксований елемент у нижньому правому куті сторінки.
+        </p>
+      </div>
+
+      <div class="fixed">
+        <p>position: fixed;</p>
+        <p>
+          Елемент із положенням: фіксоване; розташований відносно області
+          перегляду, що означає, що він завжди залишається в тому самому місці,
+          навіть якщо сторінку прокручують.
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="relative2">
+        <p>Цей елемент div має position: relative;</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod
+          eius quidem nam vero? Quos sed repellendus, quia culpa itaque quam
+          consequuntur. Vero, laborum. Possimus corporis explicabo iste iusto
+          placeat?
+        </p>
+
+        <div class="absolute">
+          <p>Цей елемент div має position: absolute;</p>
+          <p>
+            Елементи з абсолютним розташуванням видаляються з нормального потоку
+            та можуть перекривати елементи.
+          </p>
+          <p>
+            розташовується відносно найближчого розташованого relative предка
+          </p>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="bor">
+        <div class="sticky">I am sticky!</div>
+        <p>position: sticky;</p>
+        <div class="sticky">
+          Елемент із <strong>position: sticky;</strong> прилипає коли
+          прокручують сторінку.
+        </div>
+        <p style="width: 128px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi
+          non, asperiores fugiat beatae ut dolores praesentium mollitia nam
+          cupiditate animi odit iusto quo fugit autem aut amet perspiciatis
+          sequi.
+        </p>
+        <div class="sticky">
+          Липкий (sticky) елемент перемикається між <strong>relative</strong> і
+          <strong>fixed</strong>, залежно від положення прокручування.
+        </div>
+        <p style="width: 128px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi
+          non, asperiores fugiat beatae ut dolores praesentium mollitia nam
+          cupiditate animi odit iusto quo fugit autem aut amet perspiciatis
+          sequi.
+        </p>
+        <div class="sticky">
+          Потрібно вказати принаймні одну із сторін - top, right, bottom або
+          left, щоб закріплене позиціонування працювало.
+        </div>
+        <p style="width: 128px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi
+          non, asperiores fugiat beatae ut dolores praesentium mollitia nam
+          cupiditate animi odit iusto quo fugit autem aut amet perspiciatis
+          sequi.
+        </p>
+      </div>
+
+      <br />
+
+      <div class="bor">
+        <h3>Розташування тексту поверх зображення</h3>
+        <div class="container">
+          <img
+            src="img/img_5terre_wide.jpg"
+            alt="Cinque Terre"
+            class="centre"
+          />
+          <div class="center">Centered</div>
+        </div>
+        <p>За допомогою relative та absolute.</p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- The z-index Property -->
+    <div>
+      <h2>The z-index Property</h2>
+      <p>Властивість z-index визначає порядок стека елемента.</p>
+      <p>
+        Елементи можуть перекривати інші елементи. Властивість z-index визначає
+        який елемент має бути розміщений попереду чи позаду інших.
+      </p>
+
+      <div class="container">
+        <h3>Для прикладу</h3>
+        <img src="img/img_tree.png" class="zindex" />
+        <p style="width: 360px">
+          Контейнер цього абзацу з зображенням має
+          <strong>position: relative;</strong>, <br />
+          а зображення розміщено absolute (абсолютно) і має негативний індекс
+          <strong>z-index: -1:</strong> , тому картинка розташувалась під
+          текстом.
+        </p>
+        <p>
+          Примітка: z-index працює лише з позиціонованими елементами (position:
+          absolute, position: relative, position: fixed, або position: sticky) і
+          гнучкими елементами(flex items) - це елементами, які є прямими
+          дочірніми елементами display: flex елементів.
+        </p>
+      </div>
+      <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Overflow -->
+    <div>
+      <h2>Overflow</h2>
+      <p>
+        Властивість <strong>overflow</strong> (перелив) CSS контролює, що
+        відбувається з вмістом, який занадто великий, щоб поміститися в область.
+      </p>
+      <p>Працює лише для блокових елементів із заданою висотою.</p>
+      <ul>
+        <li>
+          <strong>visible</strong> - За замовчуванням. Перелив не обрізається.
+          Вміст відображається за межами вікна елемента
+          <div class="overflow-box" id="visible">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam
+            quidem, incidunt dolore adipisci quia! Earum beatae ad, itaque eaque
+            nihil impedit laborum, doloribus quasi, tempore magni doloremque
+            vitae laudantium?
+          </div>
+        </li>
+        <li>
+          <strong>hidden</strong> - Перелив обрізається, а решта вмісту буде
+          невидимою
+          <div class="overflow-box" id="hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam
+            quidem, incidunt dolore adipisci quia! Earum beatae ad, itaque eaque
+            nihil impedit laborum, doloribus quasi, tempore magni doloremque
+            vitae laudantium?
+          </div>
+        </li>
+        <li>
+          <strong>scroll</strong> - Переповнення обрізається, а для перегляду
+          решти вмісту додається смуга прокрутки
+          <div class="overflow-box" id="scroll">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam
+            quidem, incidunt dolore adipisci quia! Earum beatae ad, itaque eaque
+            nihil impedit laborum, doloribus quasi, tempore magni doloremque
+            vitae laudantium?
+          </div>
+        </li>
+        <li>
+          <strong>auto</strong> - Подібно до <strong>scroll</strong>, але додає
+          смуги прокрутки лише за необхідності
+          <div class="overflow-box" id="of-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam
+            quidem, incidunt dolore adipisci quia! Earum beatae ad, itaque eaque
+            nihil impedit laborum, doloribus quasi, tempore magni doloremque
+            vitae laudantium?
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- display: inline-block -->
+    <div>
+      <h2>display: inline-block</h2>
+      <p>
+        Порівняно з display: inline, основною відмінністю є те, що display:
+        inline-block дозволяє встановити ширину та висоту елемента.
+      </p>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Align -->
+    <div>
+      <h2>Horizontal & Vertical Align</h2>
+      <p>
+        Щоб горизонтально відцентрувати елемент блоку (наприклад, div),
+        використовуйте
+        <strong>margin: auto;</strong>
+      </p>
+      <div class="al-center">
+        <p>Hello World!</p>
+      </div>
+    </div>
+
+    <!-- Opacity / Transparency -->
+    <div>
+      <h2>CSS Opacity / Transparency</h2>
+      <h3>Непрозорість / Прозорість</h3>
+      <p>
+        Властивість opacity може приймати значення від 0,0 до 1,0. Чим менше
+        значення, тим прозоріше
+      </p>
+      <div class="clearfix" style="margin: 0 -16px">
+        <div class="imgbox">
+          <img
+            src="img/img_forest.jpg"
+            alt="Forest"
+            style="width: 100%; opacity: 0.2"
+          />
+          <p>opacity 0.2</p>
+        </div>
+
+        <div class="imgbox">
+          <img
+            src="img/img_forest.jpg"
+            alt="Forest"
+            style="width: 100%; opacity: 0.5"
+          />
+          <p>opacity 0.5</p>
+        </div>
+
+        <div class="imgbox">
+          <img src="img/img_forest.jpg" alt="Forest" style="width: 100%" />
+          <p>opacity 1<br />(default)</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Website Layout -->
+    <div class="lay">
+      <h2>Website Layout</h2>
+      <p>
+        Веб-сайт часто поділяють на заголовки, меню, вміст і нижній колонтитул:
+      </p>
+      <img src="img/example.png" alt="example" />
+
+      <h3>Header</h3>
+      <p>
+        Заголовок зазвичай розташований у верхній частині веб-сайту (або прямо
+        під верхнім навігаційним меню). Він часто містить логотип або назву
+        веб-сайту
+      </p>
+      <h3>Navigation Bar</h3>
+      <p>
+        Панель навігації містить список посилань, які допоможуть відвідувачам
+        переміщатися по вашому веб-сайту
+      </p>
+      <h3>Content</h3>
+      <p>
+        Макет у цьому розділі часто залежить від цільових користувачів.
+        Найпоширенішим макетом є один (або їх поєднання) з наступного:
+      </p>
+      <ul>
+        <li>
+          <strong>1-колонка</strong> (часто використовується для мобільних
+          браузерів)
+        </li>
+        <li>
+          <strong>2-колонки</strong> (часто використовується для планшетів і
+          ноутбуків)
+        </li>
+        <li>
+          <strong>3-колонки</strong> (використовується лише для настільних ПК)
+        </li>
+      </ul>
+      <div class="row">
+        <div class="column side">
+          <h4>Side</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+
+        <div class="column middle">
+          <h4>Main Content</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+            eget elementum magna tristique. Quisque vehicula, risus eget aliquam
+            placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+            Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+        </div>
+
+        <div class="column side">
+          <h4>Side</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+      </div>
+
+      <h3>Footer</h3>
+      <p>
+        Нижній колонтитул розміщується внизу сторінки. Він часто містить
+        інформацію про авторські права та контактну інформацію
+      </p>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+/* Обнуление
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+-------------------- */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #e7f5d3;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+footer {
+  height: 240px;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+ul.e {
+  list-style-image: url("../img/sqpurple.gif");
+}
+ul.f {
+  list-style-position: outside;
+}
+
+ul.g {
+  list-style-position: inside;
+}
+
+ul.h {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.i {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ul.i li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+
+ul.lst-a {
+  list-style-type: circle;
+}
+ul.lst-b {
+  list-style-type: disc;
+}
+ul.lst-c {
+  list-style-type: square;
+}
+
+ol.lst-d {
+  list-style-type: armenian;
+}
+ol.lst-e {
+  list-style-type: cjk-ideographic;
+}
+ol.lst-f {
+  list-style-type: decimal;
+}
+ol.lst-g {
+  list-style-type: decimal-leading-zero;
+}
+ol.lst-h {
+  list-style-type: georgian;
+}
+ol.lst-i {
+  list-style-type: hebrew;
+}
+ol.lst-j {
+  list-style-type: hiragana;
+}
+ol.lst-k {
+  list-style-type: hiragana-iroha;
+}
+ol.lst-l {
+  list-style-type: katakana;
+}
+ol.lst-m {
+  list-style-type: katakana-iroha;
+}
+ol.lst-n {
+  list-style-type: lower-alpha;
+}
+ol.lst-o {
+  list-style-type: lower-greek;
+}
+ol.lst-p {
+  list-style-type: lower-latin;
+}
+ol.lst-q {
+  list-style-type: lower-roman;
+}
+ol.lst-r {
+  list-style-type: upper-alpha;
+}
+ol.lst-s {
+  list-style-type: upper-latin;
+}
+ol.lst-t {
+  list-style-type: upper-roman;
+}
+ol.lst-u {
+  list-style-type: none;
+}
+ol.lst-v {
+  list-style-type: inherit;
+}

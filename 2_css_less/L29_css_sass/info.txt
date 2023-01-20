@@ -1,0 +1,34 @@
+Sass Tutorial
+  Introduction
+  Installation
+  Variables
+  Nested
+  @import
+  @mixin and @include
+  @extend
+  String Functions
+  Numeric Functions
+  List Functions
+  Map Functions
+  Selector Functions
+  Introspection Functions
+  Color Functions
+
+from w3schools
+
+https://www.w3schools.com/sass/default.php
+https://www.w3schools.com/sass/sass_intro.php
+https://www.w3schools.com/sass/sass_installation.php
+https://www.w3schools.com/sass/sass_variables.php
+https://www.w3schools.com/sass/sass_nesting.php
+https://www.w3schools.com/sass/sass_import.php
+https://www.w3schools.com/sass/sass_mixin_include.php
+https://www.w3schools.com/sass/sass_extend.php
+https://www.w3schools.com/sass/sass_functions_string.php
+https://www.w3schools.com/sass/sass_functions_numeric.php
+https://www.w3schools.com/sass/sass_functions_list.php
+https://www.w3schools.com/sass/sass_functions_list.php
+https://www.w3schools.com/sass/sass_functions_map.php
+https://www.w3schools.com/sass/sass_functions_selector.php
+https://www.w3schools.com/sass/sass_functions_introspection.php
+https://www.w3schools.com/sass/sass_functions_color.php

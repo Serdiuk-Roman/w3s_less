@@ -1,0 +1,21 @@
+CSS Fonts
+Web Safe Fonts
+Font Fallbacks
+Font Style
+Font Size
+Google Fonts
+Great Font Pairings(Поєднання шрифтів)
+Font Property
+Icons
+
+from w3schools
+
+https://www.w3schools.com/css/css_font.asp
+https://www.w3schools.com/css/css_font_websafe.asp
+https://www.w3schools.com/css/css_font_fallbacks.asp
+https://www.w3schools.com/css/css_font_style.asp
+https://www.w3schools.com/css/css_font_size.asp
+https://www.w3schools.com/css/css_font_google.asp
+https://www.w3schools.com/css/css_font_pairings.asp
+https://www.w3schools.com/css/css_font_shorthand.asp
+https://www.w3schools.com/css/css_icons.asp

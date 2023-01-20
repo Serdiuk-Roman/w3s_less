@@ -1,0 +1,9 @@
+HTML Entities
+HTML Symbols
+Emojis
+
+from w3schools
+
+https://www.w3schools.com/html/html_entities.asp
+https://www.w3schools.com/html/html_symbols.asp
+https://www.w3schools.com/html/html_emojis.asp

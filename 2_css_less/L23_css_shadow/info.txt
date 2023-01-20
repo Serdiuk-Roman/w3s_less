@@ -1,0 +1,7 @@
+Text Shadow
+Box Shadow
+
+from w3schools
+
+https://www.w3schools.com/css/css3_shadows.asp
+https://www.w3schools.com/css/css3_shadows_box.asp
