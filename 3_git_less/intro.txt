@@ -1,0 +1,41 @@
+
+git --version
+
+git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"
+
+mkdir myproject
+cd myproject
+
+git init
+
+git status
+git status --short
+    ?? - Untracked files
+    A - Files added to stage
+    M - Modified files
+    D - Deleted files
+
+git add README.md
+git add --all
+git add -A
+
+git commit -m "First release of Hello World!"
+git commit -a -m "Updated index.html with a new line"
+
+git log
+
+git help --all
+git [command] -help
+
+git branch hello-world-images
+git branch
+
+git checkout hello-world-images
+git checkout -b emergency-fix
+
+git merge emergency-fix
+git branch -d emergency-fix
+
+
+
